@@ -1,6 +1,6 @@
 var express = require('express')
 var app = express();
-var port = process.env.PORT || 1337; // FOR AZURE
+//var port = process.env.PORT || 1337; // FOR AZURE
 var counter = 0;
 var pubnub = require("pubnub").init({
     publish_key   : "pub-c-9339f7dd-e9a8-41d7-b3a4-037d25972fc2",
