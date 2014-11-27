@@ -51,7 +51,7 @@
         background-image: url("./rsz_windows.png"); 
       }
       .text {
-        font-size: 70px;
+        font-size: 90px;
         font-family: monospace;
         color: #1a1;
         position: absolute;
@@ -322,7 +322,9 @@ var image = {
           mySound=createsoundbite("ping.mp3");  
         }
         //var myIcon = icons[m.device].icon;
-        //if (myIcon) {} else {myIcon = icons['MacIntel'].icon;}   
+        //if (myIcon) {} else {myIcon = icons['MacIntel'].icon;}
+
+        if (m.postcode) {   
         var myMarker = new google.maps.Marker({
           //icon: myIcon,
           icon: {
@@ -333,7 +335,6 @@ var image = {
             strokeWeight: 0.4,
           },
           position: LatLng,
-          animation: "BOUNCE",
           onclick: mySound.playclip(),
           map: map});
 
@@ -341,16 +342,19 @@ var image = {
           console.log('ping!');
           myMarker.setMap(null);
         }, 10000);
-
+        }
        console.log(m);
 
        //now increment device counts
        var device = m.device;
 
+
+
        if (device == 'apple') {incrementCount('apple'); console.log('incrementing apple to' + appleCounter);}
         else if (device == 'iPhone') {incrementCount('apple'); console.log('incrementing apple to' + appleCounter);}
         else if (device == 'iPad') {incrementCount('apple'); console.log('incrementing apple to' + appleCounter);}
         else if (device == 'android') {incrementCount('android'); console.log('incrementing android to' + androidCounter);}
+        else if (device == 'Linux armv7l') {incrementCount('android'); console.log('incrementing android to' + androidCounter);}
         else if (device == 'windows') {incrementCount('windows'); console.log('incrementing windows to' + windowsCounter);}
         else {incrementCount('other'); console.log('incrementing other to ' + otherCounter);}
       }
