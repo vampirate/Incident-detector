@@ -19,19 +19,27 @@
       .ab {
         position: absolute;
       }
+      .topright {
+        right: 0;
+        width: 150px;
+        height: 8%;
+      }
       .right {
         right: 0;
         width: 150px;
-        height: 25%;
+        height: 23%;
       }
-      .top {
+      .topmost {
         top: 0;
       }
+      .top {
+        top: 8%;
+      }
       .mid1 {
-        top: 25%;
+        top: 31%;
       }
       .mid2 {
-        top: 50%;
+        top: 54%;
       }
       .bot {
         bottom: 0;
@@ -57,6 +65,14 @@
         position: absolute;
         top: 40%;
         left: 0;
+      }
+      .mylink {
+        font-size: 22px;
+        font-family: arial narrow, arial;
+        color: #1a1;
+        position: absolute;
+        top: 10px;
+        left: 2px;
       }
     </style>
     <script type="text/javascript"
@@ -373,21 +389,24 @@ var image = {
   <body>
     <div id="map-canvas" class="ab left"></div>
 
+    <div class="ab topright topmost">
+      <span id="my-link" class="mylink">http://is.gd/ebiteq</span>
+    </div> 
     <div class="ab right top">
       <img src="rsz_apple.png" width="50" height="50">
-      <span id="apple-counter" class="text"></span>
+      <span id="apple-counter" class="text">2222</span>
     </div>
     <div class="ab right mid1">
       <img src="android.png" width="50" height="50">
-      <span id="android-counter" class="text"></span>
+      <span id="android-counter" class="text">3333</span>
     </div>
     <div class="ab right mid2">
       <img src="windows.png" width="50" height="50">
-      <span id="windows-counter" class="text"></span>
+      <span id="windows-counter" class="text">4444</span>
     </div>
     <div class="ab right bot">
       <img src="question.png" width="50" height="50">
-      <span id="other-counter" class="text"></span>
+      <span id="other-counter" class="text">8888</span>
 
     </div>
   </body>
