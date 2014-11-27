@@ -13,7 +13,6 @@ function doSomethingInterestingWithPostcode(data) {
 
 var Device = navigator.platform;
 
-
 var pubnub = PUBNUB.init({
   publish_key   : "pub-c-9339f7dd-e9a8-41d7-b3a4-037d25972fc2",
   subscribe_key : "sub-c-34f9f230-6ef5-11e4-bcf0-02ee2ddab7fe"
@@ -21,7 +20,8 @@ var pubnub = PUBNUB.init({
 
 // subscribe to the channel, and render all messages as markers on the map
 function sendToPubNub(colour) {
-  IOTPostcode.colour = colour;
+  if (colour == 'clear') { IOTPostcode.clear = 'clear';}
+  else { IOTPostcode.colour = colour; }
   IOTPostcode.device = Device;
   pubnub.publish({
         channel: 'leontest1',
@@ -41,6 +41,9 @@ function bindEvents() {
   });
   $('#set-high').click(function() {
     sendToPubNub('red');
+  });  
+  $('#set-clear').click(function() {
+    sendToPubNub('clear');  
   });
 
 }
@@ -71,7 +74,7 @@ function renderMap(lat, lon) {
 //$.get makes an AJAX request to that URL. Node handles this with the app.get('/api/getPostcode'... code and returns a data object.
 $.get('/api/getPostcode', function(data, WURFL) {
   console.log(data); //You can check this out in the Chrome console.
-  console.log("Browser Type = " + Device);
+  //console.log("Browser Type = " + ua);
   console.log("Data lat = " + data.lat);
   IOTPostcode = data;
   doSomethingInterestingWithPostcode(data);

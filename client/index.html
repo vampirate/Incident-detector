@@ -5,17 +5,45 @@
     <title>NEW2 Mobile interface</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <style>
-      html, body, #map-canvas {
-        height: 50%;
-        margin: 15px;
-        padding: 15px
+    * {
+      box-sizing: border-box;
+    }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
       }
-    </style>
-    <style>
-      html, body, #page {
+      #map-canvas {
+        width: 100%;
         height: 50%;
-        margin: 0px;
-        padding: 0px
+      }
+      #page {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        padding: 10px;
+      }
+      .btn {
+        background-color: steelblue;
+        border: none;
+        text-align: center;
+        color: white;
+        padding: 15px 20px;
+        font-size: 18px;
+      }
+      .btn.low {
+        background-color: green;
+      }
+      .btn.med {
+        background-color: orange;
+      }
+      .btn.high {
+        background-color: red;
+      }
+      .btn.clear {
+        background-color: black;
       }
     </style>
     <script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
@@ -33,18 +61,19 @@
 
     <div id="page">
 
-    <h1>You are located at:</h1>
-    <p id="postcode"></p>
-    <p id="suburb"></p>
-    <p id="lat"></p>
-    <p id="lon"></p>
+      <h1>You are located at:</h1>
+      <p id="postcode"></p>
+      <p id="suburb"></p>
+      <p id="lat"></p>
+      <p id="lon"></p>
 
-    <p>
-    <button id="set-low" name="low"</button>
-    <button id="set-med"  name="med"</button>
-    <button id="set-high" name="high"</button>
-    </p>
-  </div>
+      <div>
+        <button id="set-low" class="btn low">low</button>
+        <button id="set-med"  class="btn med">med</button>
+        <button id="set-high" class="btn high">high</button>
+        <button id="set-clear" class="btn clear">clear</button>
+      </div>
+    </div>
 
 
       
