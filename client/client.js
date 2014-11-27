@@ -5,6 +5,7 @@ function doSomethingInterestingWithPostcode(data) {
   $('#suburb').text('Suburb: ' + data.suburb);
   $('#lat').text('Lat: ' + data.lat);
   $('#lon').text('Lon: ' + data.lon);
+  $('#location').text(data.suburb + ', NSW ' + data.postcode);
 
   var lat = data.lat;
   var lon = data.lon;
@@ -20,8 +21,10 @@ var pubnub = PUBNUB.init({
 
 // subscribe to the channel, and render all messages as markers on the map
 function sendToPubNub(colour) {
-  if (colour == 'clear') { IOTPostcode.clear = 'clear';}
-  else { IOTPostcode.colour = colour; }
+
+  if (colour != 'clear') { IOTPostcode.colour = colour; IOTPostcode.clear = '';}
+  else {IOTPostcode.clear = 'clear'; IOTPostcode.colour = '';}
+  //IOTPostcode.colour = colour;
   IOTPostcode.device = Device;
   pubnub.publish({
         channel: 'leontest1',
