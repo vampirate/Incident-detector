@@ -41,6 +41,7 @@ function sendToPubNub(colour) {
 function bindEvents() {
   //Bind some events
   $('#set-low').click(function () {
+    console.log("green");
     sendToPubNub('green');
   });
   $('#set-med').click(function () {
