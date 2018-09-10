@@ -5,8 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.9.3",
-    "pubnub": "^3.7.0",
-    "express": "^4.10.2"
+    "express": "^4.10.2",
+    "pubnub": "^3.16.5"
   },
   "devDependencies": {},
   "scripts": {

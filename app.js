@@ -1,4 +1,5 @@
 var express = require('express')
+var path = require("path");
 var app = express();
 var port = process.env.PORT || 1337; // FOR AZURE
 var counter = 0;
@@ -12,6 +13,7 @@ var pubnub = require("pubnub").init({
 /*  -------------------------  */
 
 app.use(express.static(__dirname + '/client')); //IMO, leave the user-facing page as the default (less to type on phone), load the dashboard with /dashboard.html
+
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); //makes it easy to send JSON

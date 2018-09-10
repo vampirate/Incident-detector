@@ -56,8 +56,6 @@ function bindEvents() {
 
 }
 
-
-
 function renderMap(lat, lon) {
   var map;
 
