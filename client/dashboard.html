@@ -1,408 +1,354 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <style>
-      html, body, #map-canvas {
-        height: 100%;
-        margin: 0px;
-        padding: 0px
-      }
-      .left {
-        left: 0;
-        top: 0;
-        right: 150px;
-        bottom: 0;
-      }
-      .ab {
-        position: absolute;
-      }
-      .topright {
-        right: 0;
-        width: 150px;
-        height: 8%;
-      }
-      .right {
-        right: 0;
-        width: 150px;
-        height: 23%;
-      }
-      .topmost {
-        top: 0;
-      }
-      .top {
-        top: 8%;
-      }
-      .mid1 {
-        top: 31%;
-      }
-      .mid2 {
-        top: 54%;
-      }
-      .bot {
-        bottom: 0;
-      }
-      .icon {
-        margin-top: 30px;
-        height: 40px;
-      }
 
-      .text {
-        font-size: 60px;
-        font-family: monospace;
-        color: #1a1;
-        position: absolute;
-        top: 40%;
-        left: 0;
-      }
-      .mylink {
-        font-size: 22px;
-        font-family: arial narrow, arial;
-        color: #1a1;
-        position: absolute;
-        top: 10px;
-        left: 2px;
-      }
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?AIzaSyB6NWRDjXI4Y7gxxPBnpz9Ms_xX9T04lNU">
-    </script>
-    <script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="client.js"></script>
+    <head>
+        <title>Simple Map</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyB6NWRDjXI4Y7gxxPBnpz9Ms_xX9T04lNU"></script>
 
-    <script>
-// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+        <script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="client.js"></script>
 
-      var html5_audiotypes={ 
-      //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
-      "mp3": "audio/mpeg"
-      }
-      function createsoundbite(sound){
-        var html5audio=document.createElement('audio')
-        if (html5audio.canPlayType){ //check support for HTML5 audio
-          for (var i=0; i<arguments.length; i++){
-          var sourceel=document.createElement('source')
-          sourceel.setAttribute('src', arguments[i])
-          if (arguments[i].match(/\.(\w+)$/i))
-            sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
-            html5audio.appendChild(sourceel)
-          }
-          html5audio.load()
-          html5audio.playclip=function(){
-          html5audio.pause()
-          html5audio.currentTime=0
-          html5audio.play()
-          }
-        return html5audio
-        }
-        else{
-          return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
-        }
-      }
-
-    var mySound=createsoundbite("ping.mp3")
-
-    </script>
-
-
-
-    <script>
-      var map;
-      function initialize() {
-        var mapOptions = {
-          zoom: 8,
-          center: new google.maps.LatLng(-34.397, 150.644),
-          styles: [
-    {
-        "featureType": "water",
-        "stylers": [
-            {
-                "color": "#021019"
+        <script>
+            // Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+            var html5_audiotypes = {
+                //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+                "mp3": "audio/mpeg"
             }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "stylers": [
-            {
-                "color": "#08304b"
+
+            function createsoundbite(sound) {
+                var html5audio = document.createElement('audio')
+                if (html5audio.canPlayType) { //check support for HTML5 audio
+                    for (var i = 0; i < arguments.length; i++) {
+                        var sourceel = document.createElement('source')
+                        sourceel.setAttribute('src', arguments[i])
+                        if (arguments[i].match(/\.(\w+)$/i))
+                            sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                        html5audio.appendChild(sourceel)
+                    }
+                    html5audio.load()
+                    html5audio.playclip = function () {
+                        html5audio.pause()
+                        html5audio.currentTime = 0
+                        html5audio.play()
+                    }
+                    return html5audio
+                } else {
+                    return {
+                        playclip: function () {
+                            throw new Error("Your browser doesn't support HTML5 audio unfortunately")
+                        }
+                    }
+                }
             }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#0c4152"
-            },
-            {
-                "lightness": 5
+
+            var mySound = createsoundbite("sound/ping.mp3")
+        </script>
+
+        <script>
+            var map;
+
+            function initialize() {
+                var mapOptions = {
+                    zoom: 8,
+                    center: new google.maps.LatLng(-34.397, 150.644),
+                    styles: [{
+                            "featureType": "water",
+                            "stylers": [{
+                                "color": "#021019"
+                            }]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "stylers": [{
+                                "color": "#08304b"
+                            }]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [{
+                                    "color": "#0c4152"
+                                },
+                                {
+                                    "lightness": 5
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.fill",
+                            "stylers": [{
+                                "color": "#000000"
+                            }]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [{
+                                    "color": "#0b434f"
+                                },
+                                {
+                                    "lightness": 25
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry.fill",
+                            "stylers": [{
+                                "color": "#000000"
+                            }]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry.stroke",
+                            "stylers": [{
+                                    "color": "#0b3d51"
+                                },
+                                {
+                                    "lightness": 16
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "geometry",
+                            "stylers": [{
+                                "color": "#000000"
+                            }]
+                        },
+                        {
+                            "elementType": "labels.text.fill",
+                            "stylers": [{
+                                "color": "#ffffff"
+                            }]
+                        },
+                        {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [{
+                                    "color": "#000000"
+                                },
+                                {
+                                    "lightness": 13
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "stylers": [{
+                                "color": "#146474"
+                            }]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.fill",
+                            "stylers": [{
+                                "color": "#000000"
+                            }]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.stroke",
+                            "stylers": [{
+                                    "color": "#144b53"
+                                },
+                                {
+                                    "lightness": 14
+                                },
+                                {
+                                    "weight": 1.4
+                                }
+                            ]
+                        }
+                    ]
+                };
+                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
             }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+        <script>
+            var pubnub = PUBNUB.init({
+                publish_key: "pub-c-9339f7dd-e9a8-41d7-b3a4-037d25972fc2",
+                subscribe_key: "sub-c-34f9f230-6ef5-11e4-bcf0-02ee2ddab7fe"
+            });
+
+
+            var icons = {
+                iPhone: {
+                    icon: 'images/rsz_apple.png'
+                },
+                iPad: {
+                    icon: 'images/rsz_apple.png'
+                },
+                Android: {
+                    icon: 'images/rsz_android.png'
+                },
+                Linux: {
+                    icon: 'images/rsz_android.png'
+                },
+                Windows: {
+                    icon: 'images/rsz_windows.png'
+                },
+                Win32: {
+                    icon: 'images/rsz_windows.png'
+                },
+                MacIntel: {
+                    icon: 'images/rsz_question.png'
+                }
+            };
+
+
+
+            var image = {
+                url: 'images/beachflag.png',
+                // This marker is 20 pixels wide by 32 pixels tall.
+                size: new google.maps.Size(20, 32),
+                // The origin for this image is 0,0.
+                origin: new google.maps.Point(0, 0),
+                // The anchor for this image is the base of the flagpole at 0,32.
+                anchor: new google.maps.Point(0, 32)
+            };
+
+
+            var appleCounter = 0;
+            var androidCounter = 0;
+            var windowsCounter = 0;
+            var otherCounter = 0;
+
+
+
+            // subscribe to the channel, and render all messages as markers on the map
+            pubnub.subscribe({
+                channel: 'leontest1',
+                message: function (m) {
+                    // get the lat and lon from the message body m.lat and m.lon
+                    var LatLng = new google.maps.LatLng(m.lat, m.lon);
+                    console.log(LatLng);
+                    // sound effect
+                    var mySound;
+                    if (m.clear == 'clear') {
+                        mySound = createsoundbite("sound/pop.mp3")
+                    } else {
+                        mySound = createsoundbite("sound/ping.mp3");
+                    }
+
+                    if (m.postcode) {
+                        var myMarker = new google.maps.Marker({
+                            //icon: myIcon,
+                            icon: {
+                                path: google.maps.SymbolPath.CIRCLE,
+                                scale: 40,
+                                fillColor: m.colour,
+                                fillOpacity: 0.4,
+                                strokeWeight: 0.4,
+                            },
+                            position: LatLng,
+                            onclick: mySound.playclip(),
+                            map: map
+                        });
+
+                        window.setTimeout(function () {
+                            console.log('ping!');
+                            myMarker.setMap(null);
+                        }, 10000);
+                    }
+                    console.log(m);
+
+                    //now increment device counts
+                    var device = m.device;
+
+                    if (device == 'MacIntel') {
+                        incrementCount('apple');
+                    } else if (device == 'iPhone') {
+                        incrementCount('apple');
+                    } else if (device == 'iPad') {
+                        incrementCount('apple');
+                    } else if (device == 'android') {
+                        incrementCount('android');
+                    } else if (device == 'Android') {
+                        incrementCount('android');
+                    } else if (device == 'Linux armv7l') {
+                        incrementCount('android');
+                    } else if (device == 'windows') {
+                        incrementCount('windows');
+                    } else if (device == 'Windows') {
+                        incrementCount('windows');
+                    } else if (device == 'Win32') {
+                        incrementCount('windows');
+                    } else if (device == 'Win64') {
+                        incrementCount('windows');
+                    } else {
+                        incrementCount('other');
+                    }
+
+                    function incrementCount(device) {
+                        if (device == 'apple') {
+                            appleCounter++
+                        } else if (device == 'android') {
+                            androidCounter++
+                        } else if (device == 'windows') {
+                            windowsCounter++
+                        } else {
+                            otherCounter++;
+                        }
+
+                        $('#apple-counter').text(appleCounter);
+                        $('#android-counter').text(androidCounter);
+                        $('#windows-counter').text(windowsCounter);
+                        $('#other-counter').text(otherCounter);
+                    }
+                }
+            });
+        </script>
+
+        <style>
+            .jumbotron {
+                padding: 1%;
+                overflow: hidden;
             }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#0b434f"
-            },
-            {
-                "lightness": 25
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#0b3d51"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 13
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "stylers": [
-            {
-                "color": "#146474"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#144b53"
-            },
-            {
-                "lightness": 14
-            },
-            {
-                "weight": 1.4
-            }
-        ]
-    }
-]
-        };
-        map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+        </style>
+    </head>
 
-    <script>
-    var pubnub = PUBNUB.init({
-      publish_key   : "pub-c-9339f7dd-e9a8-41d7-b3a4-037d25972fc2",
-      subscribe_key : "sub-c-34f9f230-6ef5-11e4-bcf0-02ee2ddab7fe"
-    });
+    <body>
 
+        <div>
+            <div id="map-canvas" style="height: 500px;"></div>
+            <div class="row">a</div>
+        </div>
 
-    var icons = {
-      iPhone: {
-      icon: 'rsz_apple.png'
-      },
-      iPad: {
-      icon: 'rsz_apple.png'
-      },
-    Android: {
-      icon: 'rsz_android.png'
-      },
-      Linux: {
-      icon: 'rsz_android.png'
-      },
-    Windows: {
-      icon: 'rsz_windows.png'
-      },
-      Win32: {
-      icon: 'rsz_windows.png'
-      },
-      MacIntel: {
-      icon: 'rsz_question.png'
-      }
-    };
-
- 
-
-var image = {
-    url: 'images/beachflag.png',
-    // This marker is 20 pixels wide by 32 pixels tall.
-    size: new google.maps.Size(20, 32),
-    // The origin for this image is 0,0.
-    origin: new google.maps.Point(0,0),
-    // The anchor for this image is the base of the flagpole at 0,32.
-    anchor: new google.maps.Point(0, 32)
-  };
-
-
-  var appleCounter = 0;
-  var androidCounter = 0;
-  var windowsCounter = 0;
-  var otherCounter = 0;
-
-  function incrementCount(device) {
-    if (device == 'apple') { appleCounter++}
-      else if (device == 'android') {androidCounter++}
-      else if (device == 'windows') {windowsCounter++}
-      else {otherCounter++; }
-
-    $('#apple-counter').text(appleCounter);
-    $('#android-counter').text(androidCounter);
-    $('#windows-counter').text(windowsCounter);
-    $('#other-counter').text(otherCounter);
-  }
-
-    // subscribe to the channel, and render all messages as markers on the map
-    pubnub.subscribe({
-      channel: 'leontest1',
-      message: function(m){
-        // get the lat and lon from the message body m.lat and m.lon
-        var LatLng = new google.maps.LatLng(m.lat, m.lon);
-        // sound effect
-        var mySound;
-        if (m.clear == 'clear') { 
-          mySound=createsoundbite("pop.mp3") }
-        else { 
-          mySound=createsoundbite("ping.mp3");  
-        }
-        //var myIcon = icons[m.device].icon;
-        //if (myIcon) {} else {myIcon = icons['MacIntel'].icon;}
-
-        if (m.postcode) {   
-        var myMarker = new google.maps.Marker({
-          //icon: myIcon,
-          icon: {
-            path: google.maps.SymbolPath.CIRCLE,
-            scale: 40,
-            fillColor: m.colour,
-            fillOpacity: 0.4,
-            strokeWeight: 0.4,
-          },
-          position: LatLng,
-          onclick: mySound.playclip(),
-          map: map});
-
-        window.setTimeout(function() {
-          console.log('ping!');
-          myMarker.setMap(null);
-        }, 10000);
-        }
-       console.log(m);
-
-       //now increment device counts
-       var device = m.device;
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="images/rsz_apple.png" width="50" height="50">
+                        <span id="apple-counter" class="text"></span>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="images/android.png" width="50" height="50">
+                        <span id="android-counter" class="text"></span>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="images/windows.png" width="50" height="50">
+                        <span id="windows-counter" class="text"></span>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="images/question.png" width="50" height="50">
+                        <span id="other-counter" class="text"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-       if (device == 'apple') {incrementCount('apple'); console.log('incrementing apple to' + appleCounter);}
-        else if (device == 'iPhone') {incrementCount('apple'); console.log('incrementing apple to' + appleCounter);}
-        else if (device == 'iPad') {incrementCount('apple'); console.log('incrementing apple to' + appleCounter);}
-        else if (device == 'android') {incrementCount('android'); console.log('incrementing android to' + androidCounter);}
-        else if (device == 'Android') {incrementCount('android'); console.log('incrementing android to' + androidCounter);}
-        else if (device == 'Linux armv7l') {incrementCount('android'); console.log('incrementing android to' + androidCounter);}
-        else if (device == 'windows') {incrementCount('windows'); console.log('incrementing windows to' + windowsCounter);}
-        else if (device == 'Windows') {incrementCount('windows'); console.log('incrementing windows to' + windowsCounter);}
-        else if (device == 'Win32') {incrementCount('windows'); console.log('incrementing windows to' + windowsCounter);}
-        else if (device == 'Win64') {incrementCount('windows'); console.log('incrementing windows to' + windowsCounter);}
-        else {incrementCount('other'); console.log('incrementing other to ' + otherCounter);}
-      }
-    });
+    </body>
 
-
-    
-
-    </script>
-
-
-
-  
-  </head>
-  
-  <body>
-    <div id="map-canvas" class="ab left"></div>
-
-    <div class="ab topright topmost">
-      <span id="my-link" class="mylink">http://is.gd/ebiteq</span>
-    </div> 
-    <div class="ab right top">
-      <img src="rsz_apple.png" width="50" height="50">
-      <span id="apple-counter" class="text"></span>
-    </div>
-    <div class="ab right mid1">
-      <img src="android.png" width="50" height="50">
-      <span id="android-counter" class="text"></span>
-    </div>
-    <div class="ab right mid2">
-      <img src="windows.png" width="50" height="50">
-      <span id="windows-counter" class="text"></span>
-    </div>
-    <div class="ab right bot">
-      <img src="question.png" width="50" height="50">
-      <span id="other-counter" class="text"></span>
-
-    </div>
-  </body>
 </html>

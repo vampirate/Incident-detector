@@ -1,83 +1,49 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>NSW Zombie Threat Level</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <style>
-    * {
-      box-sizing: border-box;
-    }
-      html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-      #map-canvas {
-        width: 100%;
-        height: 50%;
-      }
-      #page {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 50%;
-        padding: 10px;
-        font-family: Calibri, Arial Narrow, Arial;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      }
-      .btn {
-        background-color: steelblue;
-        border: none;
-        text-align: center;
-        color: white;
-        padding: 15px 15px;
-        font-size: 14px;
-      }
-      .btn.low {
-        background-color: green;
-      }
-      .btn.med {
-        background-color: orange;
-      }
-      .btn.high {
-        background-color: red;
-      }
-      .btn.clear {
-        background-color: black;
-      }
-    </style>
     <script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?AIzaSyB6NWRDjXI4Y7gxxPBnpz9Ms_xX9T04lNU">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyB6NWRDjXI4Y7gxxPBnpz9Ms_xX9T04lNU">
     </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
     <script src="client.js"></script>
 
   </head>
-  
-  <body>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
 
+    #map-canvas {
+      width: 100%;
+      height: 75%;
+    }
+  </style>
+
+  <body>
     <div id="map-canvas"></div>
 
-    <div id="page">
-
+    <div class="container-fluid">
       <p id="location"></p>
 
       <h1>Bogan Zombie Threat Level</h1>
 
       <div>
-        <button id="set-low" class="btn low">low</button>
-        <button id="set-med"  class="btn med">med</button>
-        <button id="set-high" class="btn high">high</button>
-        <button id="set-clear" class="btn clear">clear</button>
+        <button id="set-low" class="btn btn-success">low</button>
+        <button id="set-med" class="btn btn-warning">med</button>
+        <button id="set-high" class="btn btn-danger">high</button>
+        <button id="set-clear" class="btn btn-dark">clear</button>
       </div>
     </div>
 
 
-      
-
-    
   </body>
+
 </html>
