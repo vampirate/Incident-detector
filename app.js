@@ -21,7 +21,6 @@ var server = app.listen(port, function () {
   console.log('App listening at http://%s:%s', host, port)
 })
 
-//Shuffle the array once (when the server starts). Then just serve sequentially to each new user.
 function shuffle(originalArray) {
   var tmpCounter = originalArray.length,
     tempVal, i;
