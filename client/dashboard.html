@@ -72,6 +72,10 @@
                 map = new google.maps.Map(document.getElementById('map'), mapOptions);
             }
             google.maps.event.addDomListener(window, 'load', initialize);
+            var appleCounter = 0;
+            var androidCounter = 0;
+            var windowsCounter = 0;
+            var otherCounter = 0;
         </script>
 
         <script>
@@ -119,10 +123,6 @@
 
                     //now increment device counts
                     var device = m.device;
-                    var appleCounter = 0;
-                    var androidCounter = 0;
-                    var windowsCounter = 0;
-                    var otherCounter = 0;
                     if (device == 'MacIntel') {
                         appleCounter++;
                     } else if (device == 'iPhone') {
