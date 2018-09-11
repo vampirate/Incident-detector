@@ -6,7 +6,8 @@
   "dependencies": {
     "body-parser": "^1.9.3",
     "express": "^4.10.2",
-    "pubnub": "^3.16.5"
+    "pubnub": "^3.16.5",
+    "require": "^2.4.20"
   },
   "devDependencies": {},
   "scripts": {
