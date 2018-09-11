@@ -5,16 +5,15 @@
     <meta charset="utf-8">
     <title>NSW Zombie Threat Level</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="//cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.5.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyB6NWRDjXI4Y7gxxPBnpz9Ms_xX9T04lNU">
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous">
     <script src="client.js"></script>
-
   </head>
+
   <style>
     html,
     body {
@@ -29,12 +28,9 @@
 
   <body>
     <div id="map-canvas"></div>
-
     <div class="container-fluid">
       <p id="location"></p>
-
       <h1>Bogan Zombie Threat Level</h1>
-
       <div>
         <button id="set-low" class="btn btn-success">low</button>
         <button id="set-med" class="btn btn-warning">med</button>
@@ -42,8 +38,5 @@
         <button id="set-clear" class="btn btn-dark">clear</button>
       </div>
     </div>
-
-
   </body>
-
 </html>
