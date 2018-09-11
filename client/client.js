@@ -41,10 +41,13 @@ function sendToPubNub(colour) {
   );
 }
 
+pubnub.subscribe({
+  channels: ["IoT channel 1"],
+});
+
 function bindEvents() {
   //Bind some events
   $('#set-low').click(function () {
-    console.log("green");
     sendToPubNub('green');
   });
   $('#set-med').click(function () {
@@ -55,6 +58,15 @@ function bindEvents() {
   });
   $('#set-clear').click(function () {
     sendToPubNub('clear');
+  });
+  $('#new-user').click(function () {
+    $.get('/api/getPostcode', function (data, WURFL) {
+      console.log(data);
+      IOTPostcode = data;
+      renderMap(data.lat, data.lon);
+      bindEvents();
+      showInfoOnPage(data);
+    });
   });
 }
 
