@@ -8,7 +8,8 @@
     "express": "^4.10.2",
     "mysql": "^2.16.0",
     "pubnub": "^3.16.5",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "sqlite3": "^4.0.2"
   },
   "devDependencies": {},
   "scripts": {
