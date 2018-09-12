@@ -73,21 +73,23 @@ function bindEvents() {
 function renderMap(lat, lon) {
   var map;
 
-  function initialize() {
+  function initMap() {
     var mapOptions = {
       zoom: 5,
       center: new google.maps.LatLng(lat, lon)
     };
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
   }
-  google.maps.event.addDomListener(window, 'load', initialize());
+  google.maps.event.addDomListener(window, 'load', initMap());
   
+
   var LatLng = new google.maps.LatLng(lat, lon);
-  var myMarker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
     position: LatLng,
     animation: google.maps.Animation.DROP,
     map: map
   });
+  
 }
 
 function showInfoOnPage(data) {
