@@ -71,23 +71,75 @@
 
         <script>
             var map;
+            var markers = [];
+            var defaultLat = -33.8688
+            var defaultLng = 151.2093
+            var defaultLatLng = new google.maps.LatLng(defaultLat, defaultLng);
 
             function initialize() {
                 var mapOptions = {
-                    zoom: 6,
-                    center: new google.maps.LatLng(-33.8688, 151.2093),
-                    disableDefaultUI: true
+                    zoom: 5,
+                    center: new google.maps.LatLng(defaultLat, defaultLng)
                 };
+
                 map = new google.maps.Map(document.getElementById('map'), mapOptions);
             }
             google.maps.event.addDomListener(window, 'load', initialize);
+
+            function placeMarker(m) {
+                var LatLng = new google.maps.LatLng(m.lat, m.lon);
+                var myMarker = new google.maps.Marker({
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 20,
+                        fillColor: m.colour,
+                        fillOpacity: 0.4,
+                        strokeWeight: 1,
+                    },
+                    position: LatLng,
+                    onclick: mySound.playclip(),
+                    map: map
+                });
+
+                var contentString = m.suburb + ", NSW " + m.postcode + "<br>" + "Code: " + m.colour;
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                myMarker.addListener('click', function () {
+                    map.setZoom(7);
+                    map.setCenter(myMarker.getPosition());
+                    infowindow.open(map, myMarker);
+
+                    window.setTimeout(function () {
+                        infowindow.close();
+                        map.setZoom(5);
+                        map.panTo(defaultLatLng);
+                    }, 5000);
+                });
+
+                markers.push(myMarker);
+            }
+
+            function eraseAllMarkers() {
+                setMapOnAll(null);
+                markers = [];
+            }
+
+            function setMapOnAll(map) {
+                for (var i = 0; i < markers.length; i++) {
+                    markers[i].setMap(map);
+                }
+            }
+        </script>
+
+        <script>
             var appleCounter = 0;
             var androidCounter = 0;
             var windowsCounter = 0;
             var otherCounter = 0;
-        </script>
 
-        <script>
             var pubnub = new PubNub({
                 subscribeKey: "sub-c-34f9f230-6ef5-11e4-bcf0-02ee2ddab7fe",
                 ssl: true
@@ -104,30 +156,14 @@
                     var LatLng = new google.maps.LatLng(m.lat, m.lon);
                     // sound effect
                     var mySound;
-                    if (m.colour == 'clear') {
+                    if (m.colour == 'Clear') {
                         mySound = createsoundbite("sound/pop.mp3");
                     } else {
                         mySound = createsoundbite("sound/ping.mp3");
                     }
 
                     if (m.postcode) {
-                        var myMarker = new google.maps.Marker({
-                            icon: {
-                                path: google.maps.SymbolPath.CIRCLE,
-                                scale: 20,
-                                fillColor: m.colour,
-                                fillOpacity: 0.4,
-                                strokeWeight: 1,
-                            },
-                            position: LatLng,
-                            onclick: mySound.playclip(),
-                            map: map
-                        });
-
-                        window.setTimeout(function () {
-                            console.log('Erased marker!');
-                            myMarker.setMap(null);
-                        }, 10000);
+                        placeMarker(m);
                     }
 
                     //now increment device counts
@@ -135,7 +171,7 @@
                     if (device == 'MacIntel') {
                         appleCounter++;
                     } else if (device == 'iPhone') {
-                        appleCounter++;
+                        androidCounter++;
                     } else if (device == 'iPad') {
                         appleCounter++;
                     } else if (device == 'android') {
@@ -175,21 +211,24 @@
 
             <div class="jumbotron" style="padding: 0.6%">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="images/rsz_apple.png" width="50" height="50">
+                    <div style="margin: 0.5%; margin-left: 1.2%;">
+                        <img src="images/rsz_apple.png" width="40" height="40">
                         <span id="apple-counter" class="text"></span>
                     </div>
-                    <div class="col-sm-3">
-                        <img src="images/android.png" width="50" height="50">
+                    <div style="margin: 0.5%">
+                        <img src="images/android.png" width="40" height="40">
                         <span id="android-counter" class="text"></span>
                     </div>
-                    <div class="col-sm-3">
-                        <img src="images/windows.png" width="50" height="50">
+                    <div style="margin: 0.5%">
+                        <img src="images/windows.png" width="40" height="40">
                         <span id="windows-counter" class="text"></span>
                     </div>
-                    <div class="col-sm-3">
-                        <img src="images/question.png" width="50" height="50">
+                    <div style="margin: 0.5%">
+                        <img src="images/question.png" width="40" height="40">
                         <span id="other-counter" class="text"></span>
+                    </div>
+                    <div style="margin: 0.5%">
+                        <button onclick="eraseAllMarkers();" class="btn btn-info">Clear all markers</button>
                     </div>
                 </div>
             </div>

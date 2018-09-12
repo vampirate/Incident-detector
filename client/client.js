@@ -48,16 +48,16 @@ pubnub.subscribe({
 function bindEvents() {
   //Bind some events
   $('#set-low').click(function () {
-    sendToPubNub('green');
+    sendToPubNub('Green');
   });
   $('#set-med').click(function () {
-    sendToPubNub('orange');
+    sendToPubNub('Orange');
   });
   $('#set-high').click(function () {
-    sendToPubNub('red');
+    sendToPubNub('Red');
   });
   $('#set-clear').click(function () {
-    sendToPubNub('clear');
+    sendToPubNub('Clear');
   });
   $('#new-user').click(function () {
     $.get('/api/getPostcode', function (data, WURFL) {
@@ -75,14 +75,13 @@ function renderMap(lat, lon) {
 
   function initialize() {
     var mapOptions = {
-      zoom: 6,
-      center: new google.maps.LatLng(lat, lon),
-      disableDefaultUI: true
+      zoom: 5,
+      center: new google.maps.LatLng(lat, lon)
     };
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
   }
-
   google.maps.event.addDomListener(window, 'load', initialize());
+  
   var LatLng = new google.maps.LatLng(lat, lon);
   var myMarker = new google.maps.Marker({
     position: LatLng,
