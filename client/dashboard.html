@@ -106,16 +106,14 @@
                 var infowindow = new google.maps.InfoWindow({
                     content: contentString
                 });
-                
+
                 marker.addListener('click', function () {
                     map.setZoom(7);
                     map.setCenter(marker.getPosition());
                     infowindow.open(map, marker);
                     window.setTimeout(function () {
                         infowindow.close();
-                        map.setZoom(5);
-                        map.panTo(defaultLatLng);
-                    }, 5000);
+                    }, 3000);
                 });
 
             }
@@ -204,7 +202,7 @@
         <div id="map" style="height: 500px;"></div>
         <hr>
         <div class="container-fluid">
-            <h1>Incident detected at</h1>
+            <h1>Last Incident detected at</h1>
             <p id="location">Location Unknown</p>
 
             <div class="jumbotron" style="padding: 0.6%">
