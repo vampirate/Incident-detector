@@ -10,7 +10,7 @@ var pubnub = new PubNub({
   subscribeKey: "sub-c-34f9f230-6ef5-11e4-bcf0-02ee2ddab7fe"
 });
 
-app.use(express.static(__dirname + '/client')); //IMO, leave the user-facing page as the default (less to type on phone), load the dashboard with /dashboard.html
+app.use(express.static(__dirname + "/")); //IMO, leave the user-facing page as the default (less to type on phone), load the dashboard with /dashboard.html
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); //makes it easy to send JSON
