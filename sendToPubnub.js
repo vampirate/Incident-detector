@@ -1,4 +1,6 @@
 var IOTPostcode;
+var lat = -33.8688;
+var lng = 151.2093;
 
 var pubnub = new PubNub({
   publishKey: "pub-c-9339f7dd-e9a8-41d7-b3a4-037d25972fc2",
@@ -6,10 +8,13 @@ var pubnub = new PubNub({
   ssl: true
 });
 
+
 $.get('/api/getPostcode', function (data, WURFL) {
   console.log(data);
   IOTPostcode = data;
-  renderMap(data.lat, data.lon);
+  lat = data.lat;
+  lng = data.lon;
+  renderMap(lat, lng);
   bindEvents();
   showInfoOnPage(data);
 });
@@ -63,7 +68,9 @@ function bindEvents() {
     $.get('/api/getPostcode', function (data, WURFL) {
       console.log(data);
       IOTPostcode = data;
-      renderMap(data.lat, data.lon);
+      lat = data.lat;
+      lng = data.lon;
+      renderMap(lat, lng);
       bindEvents();
       showInfoOnPage(data);
     });
@@ -81,7 +88,7 @@ function renderMap(lat, lon) {
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
   }
   google.maps.event.addDomListener(window, 'load', initMap());
-  
+
 
   var LatLng = new google.maps.LatLng(lat, lon);
   var marker = new google.maps.Marker({
@@ -89,7 +96,7 @@ function renderMap(lat, lon) {
     animation: google.maps.Animation.DROP,
     map: map
   });
-  
+
 }
 
 function showInfoOnPage(data) {
