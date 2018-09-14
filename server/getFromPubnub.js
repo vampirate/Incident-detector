@@ -18,6 +18,7 @@ pubnub.addListener({
     message: function (msg) {
         var m = msg.message.such;
         // get the lat and lon from the message body m.lat and m.lon
+        
         var LatLng = new google.maps.LatLng(m.lat, m.lon);
         // sound effect
         var mySound;
@@ -29,6 +30,10 @@ pubnub.addListener({
 
         if (m.postcode) {
             placeMarker(m);
+        }
+
+        if (m.weather) {
+            console.log("received " + m.weather.weather[0].description);
         }
 
         //now increment device counts

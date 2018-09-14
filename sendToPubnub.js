@@ -1,6 +1,8 @@
 var IOTPostcode;
 var lat = -33.8688;
 var lng = 151.2093;
+var weather;
+
 
 var pubnub = new PubNub({
   publishKey: "pub-c-9339f7dd-e9a8-41d7-b3a4-037d25972fc2",
@@ -21,7 +23,7 @@ $.get('/api/getPostcode', function (data, WURFL) {
 function sendToPubNub(colour) {
   IOTPostcode.colour = colour;
   IOTPostcode.device = Device;
-
+  IOTPostcode.weather = weatherJson;
   pubnub.publish({
       message: {
         such: IOTPostcode
@@ -39,7 +41,8 @@ function sendToPubNub(colour) {
         // handle error
         console.log(status)
       } else {
-        console.log("message Published, will set postcode", IOTPostcode, " to ", colour)
+        console.log(`Published: ${IOTPostcode.postcode} with color ${colour}`);
+        console.log(IOTPostcode.weather);
       }
     }
   );
@@ -52,15 +55,19 @@ pubnub.subscribe({
 function bindEvents() {
   //Bind some events
   $('#set-low').click(function () {
+    getWeather();
     sendToPubNub('Green');
   });
   $('#set-med').click(function () {
+    getWeather();
     sendToPubNub('Orange');
   });
   $('#set-high').click(function () {
+    getWeather();
     sendToPubNub('Red');
   });
   $('#set-clear').click(function () {
+    getWeather();
     sendToPubNub('Clear');
   });
   $('#new-user').click(function () {

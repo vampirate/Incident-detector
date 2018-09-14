@@ -10,12 +10,13 @@
       crossorigin="anonymous">
     <link rel="stylesheet" href="clientCSS.css">
 
-    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.5.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6C7cZM_BmEySiVB5l_-4ahYp1VtQ5ciE"
       async></script>
-    <script src="sendToPubnub.js"></script>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="getWeather.js"></script>
+    <script src="sendToPubnub.js"></script>
+    
   </head>
 
   <body>
@@ -35,7 +36,8 @@
           <button type="button" class="btn btn-info" onclick="window.open('server/dashboard.html', '_blank')" style="margin: 0.6%;">Go
             to see the
             dashboard</button>
-          <button id="new-user" class="btn btn-info" style="margin: 0.6%;" onclick="getWeather()">Get weather</button>
+          <button id="new-user" class="btn btn-info" style="margin: 0.6%;" onclick="showWeather(getWeather);">Check weather info</button>
+          <div id="weather"></div>
         </div>
       </div>
 
