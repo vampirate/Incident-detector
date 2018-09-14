@@ -105,8 +105,8 @@ function renderMap(lat, lon) {
 }
 
 function showInfoOnPage(data) {
-  $('#location').text(data.suburb + ", NSW " + data.postcode);
+  $('#location').text(`${data.suburb}, NSW, ${data.postcode}`);
 }
 
 var Device = navigator.platform;
-console.log("The device sending the request is " + Device);
+console.log(`The device sending the request is ${Device}`);

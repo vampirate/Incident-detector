@@ -4,6 +4,7 @@ var windowsCounter = 0;
 var otherCounter = 0;
 var pop = new Audio("sound/pop.mp3");
 var ping = new Audio("sound/ping.mp3");
+var m;
 
 var pubnub = new PubNub({
     subscribeKey: "sub-c-34f9f230-6ef5-11e4-bcf0-02ee2ddab7fe",
@@ -16,9 +17,9 @@ pubnub.subscribe({
 
 pubnub.addListener({
     message: function (msg) {
-        var m = msg.message.such;
+        m = msg.message.such;
         // get the lat and lon from the message body m.lat and m.lon
-        
+
         var LatLng = new google.maps.LatLng(m.lat, m.lon);
         // sound effect
         var mySound;
@@ -32,9 +33,6 @@ pubnub.addListener({
             placeMarker(m);
         }
 
-        if (m.weather) {
-            console.log("received " + m.weather.weather[0].description);
-        }
 
         //now increment device counts
         var device = m.device;
