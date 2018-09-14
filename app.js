@@ -32,4 +32,5 @@ suburb = shuffle(require('./NSWLATLON.json'));
 
 app.get('/api/getPostcode', function (req, res) {
   suburb = shuffle(require('./NSWLATLON.json'));
+  console.log(suburb);
 });
