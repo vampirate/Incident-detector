@@ -23,22 +23,13 @@ var server = app.listen(port, function () {
   console.log('App listening at http://%s:%s', host, port)
 })
 
-function shuffle(originalArray) {
-  var tmpCounter = originalArray.length,
-    tempVal, i;
-  while (tmpCounter > 0) {
-    i = Math.floor(Math.random() * tmpCounter);
-    tmpCounter--;
-    tempVal = originalArray[tmpCounter];
-    originalArray[tmpCounter] = originalArray[i];
-    originalArray[i] = tempVal;
-  }
-  return originalArray;
+
+function shuffle(suburbs) {
+  suburbs[Math.floor(Math.random() * items.length)];
 }
 
-var shuffledPostcodes = shuffle(require('./NSWLATLON.json'));
+suburb = shuffle(require('./NSWLATLON.json'));
 
 app.get('/api/getPostcode', function (req, res) {
-  counter++;
-  res.json(shuffledPostcodes[counter]);
+  suburb = shuffle(require('./NSWLATLON.json'));
 });

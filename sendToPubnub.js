@@ -8,7 +8,6 @@ var pubnub = new PubNub({
   ssl: true
 });
 
-
 $.get('/api/getPostcode', function (data, WURFL) {
   console.log(data);
   IOTPostcode = data;
