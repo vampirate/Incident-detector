@@ -16,7 +16,7 @@ function getWeather() {
             alert(weatherLog);
         }
     };
-    xhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=fa583b3fd490451806d9365adc9e302c",
+    xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&APPID=fa583b3fd490451806d9365adc9e302c",
         true);
     xhttp.send();
 }
