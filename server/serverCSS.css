@@ -4,13 +4,12 @@ body {
 }
 
 .jumbotron {
-    padding: 1%;
     overflow: hidden;
 }
 
 #map {
     width: 100%;
-    height: 75%;
+    height: 430px;
 }
 
 .footer {

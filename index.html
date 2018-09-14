@@ -16,7 +16,7 @@
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="getWeather.js"></script>
     <script src="sendToPubnub.js"></script>
-    
+
   </head>
 
   <body>
@@ -28,15 +28,19 @@
 
       <div class="jumbotron" style="padding: 0.6%">
         <div class="row">
-          <button id="set-low" class="btn btn-success" style="margin: 0.6%; margin-left: 1.2%;">Low</button>
-          <button id="set-med" class="btn btn-warning" style="margin: 0.6%">Med</button>
-          <button id="set-high" class="btn btn-danger" style="margin: 0.6%">High</button>
-          <button id="set-clear" class="btn btn-dark" style="margin: 0.6%">Clear</button>
-          <button id="new-user" class="btn btn-info" style="margin: 0.6%;">Set a new incident location</button>
+          <button id="new-user" class="btn btn-info" style="margin: 0.6%; margin-left: 1.2%;">Set a new incident
+            location</button>
+          <button id="new-user" class="btn btn-info" style="margin: 0.6%;" onclick="showWeather(getWeather);">Check
+            weather info</button>
+          <div class="btn-group" style="padding: 0.6%">
+            <button id="set-low" class="btn btn-success">Set low</button>
+            <button id="set-med" class="btn btn-warning">Set med</button>
+            <button id="set-high" class="btn btn-danger">Set high</button>
+            <button id="set-clear" class="btn btn-dark">Set clear</button>
+          </div>
           <button type="button" class="btn btn-info" onclick="window.open('server/dashboard.html', '_blank')" style="margin: 0.6%;">Go
             to see the
             dashboard</button>
-          <button id="new-user" class="btn btn-info" style="margin: 0.6%;" onclick="showWeather(getWeather);">Check weather info</button>
           <div id="weather"></div>
         </div>
       </div>

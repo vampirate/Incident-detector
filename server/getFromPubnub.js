@@ -33,7 +33,6 @@ pubnub.addListener({
             placeMarker(m);
         }
 
-
         //now increment device counts
         var device = m.device;
         if (device == 'MacIntel') {
@@ -59,6 +58,7 @@ pubnub.addListener({
         } else {
             otherCounter++;
         }
+
         $('#apple-counter').text(appleCounter);
         $('#android-counter').text(androidCounter);
         $('#windows-counter').text(windowsCounter);
