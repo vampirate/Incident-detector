@@ -23,14 +23,8 @@ var server = app.listen(port, function () {
   console.log('App listening at http://%s:%s', host, port)
 })
 
-
-function shuffle(suburbs) {
-  suburbs[Math.floor(Math.random() * items.length)];
-}
-
-suburb = shuffle(require('./NSWLATLON.json'));
-
-app.get('/api/getPostcode', function (req, res) {
-  suburb = shuffle(require('./NSWLATLON.json'));
-  console.log(suburb);
-});
+app.get('/api/getPostCode', function (req, res) {
+  var suburbs = require('./NSWLATLON.json');
+  suburb = suburbs[Math.floor(Math.random() * suburbs.length)];
+  res.send(suburb)
+})

@@ -8,8 +8,6 @@ var pubnub = new PubNub({
   ssl: true
 });
 
-
-
 $.get('/api/getPostcode', function (data, WURFL) {
   bindEvents();
   console.log(data);
@@ -66,8 +64,8 @@ function bindEvents() {
     sendToPubNub('Clear');
   });
   $('#new-user').click(function () {
-    console.log("GETTING NEW LOCATION!");
     $.get('/api/getPostcode', function (data, WURFL) {
+      console.log(data);
       IOTPostcode = data;
       lat = data.lat;
       lng = data.lon;

@@ -13,7 +13,7 @@ function getWeather() {
             temp = parseFloat(JSON.stringify(responseJson.main.temp - 273.15)).toFixed(1);
             humidity = JSON.stringify(responseJson.main.humidity);
             console.log(`${sky}, the temperature is ${temp} Celcius, and the humidity is ${humidity}`);
-            var weatherLog = `${sky}, the temperature is ${temp} Celcius, and the humidity is ${humidity}`;
+            var weatherLog = `At ${lat}||${lng}, ${sky}, the temperature is ${temp} Celcius, and the humidity is ${humidity}`;
             alert(weatherLog);
         }
     };
