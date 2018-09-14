@@ -2,6 +2,8 @@ var appleCounter = 0;
 var androidCounter = 0;
 var windowsCounter = 0;
 var otherCounter = 0;
+var pop = new Audio("sound/pop.mp3");
+var ping = new Audio("sound/ping.mp3");
 
 var pubnub = new PubNub({
     subscribeKey: "sub-c-34f9f230-6ef5-11e4-bcf0-02ee2ddab7fe",
@@ -20,9 +22,9 @@ pubnub.addListener({
         // sound effect
         var mySound;
         if (m.colour == 'Clear') {
-            mySound = createsoundbite("sound/pop.mp3");
+            pop.play();
         } else {
-            mySound = createsoundbite("sound/ping.mp3");
+            ping.play();
         }
 
         if (m.postcode) {

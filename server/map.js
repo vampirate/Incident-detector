@@ -25,7 +25,6 @@ function placeMarker(m) {
             strokeWeight: 1,
         },
         position: LatLng,
-        onclick: mySound.playclip(),
         map: map
     });
 
@@ -49,6 +48,7 @@ function placeMarker(m) {
 function eraseAllMarkers() {
     setMapOnAll(null);
     markers = [];
+    pop.play();
 }
 
 function setMapOnAll(map) {
