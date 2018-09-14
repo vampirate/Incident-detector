@@ -1,5 +1,5 @@
+var weatherJson;
 function getWeather() {
-    var weather;
     var sky;
     var temp;
     var humidity;
@@ -7,11 +7,10 @@ function getWeather() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4) {
-            responseJson = JSON.parse(this.responseText);
-            weather = JSON.stringify(responseJson.weather);
-            sky = JSON.stringify(responseJson.weather[0].description);
-            temp = parseFloat(JSON.stringify(responseJson.main.temp - 273.15)).toFixed(1);
-            humidity = JSON.stringify(responseJson.main.humidity);
+            weatherJson = JSON.parse(this.responseText);
+            sky = JSON.stringify(weatherJson.weather[0].description);
+            temp = parseFloat(JSON.stringify(weatherJson.main.temp - 273.15)).toFixed(1);
+            humidity = JSON.stringify(weatherJson.main.humidity);
             console.log(`${sky}, the temperature is ${temp} Celcius, and the humidity is ${humidity}`);
             var weatherLog = `At ${lat}||${lng}, ${sky}, the temperature is ${temp} Celcius, and the humidity is ${humidity}`;
             alert(weatherLog);
