@@ -23,3 +23,5 @@ app.get('/api/getPostCode', function (req, res) {
   suburb = suburbs[Math.floor(Math.random() * suburbs.length)];
   res.send(suburb)
 })
+
+

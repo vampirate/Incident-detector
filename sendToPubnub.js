@@ -17,9 +17,9 @@ $.get('/api/getPostcode', function (data, WURFL) {
   lng = data.lon;
   renderMap(lat, lng);
   showInfoOnPage(data);
+  getWeather();
+  showWeather(getWeather);
 });
-
-
 
 function sendToPubNub(colour) {
   IOTPostcode.colour = colour;
@@ -57,19 +57,15 @@ pubnub.subscribe({
 function bindEvents() {
   //Bind some events
   $('#set-low').click(function () {
-    getWeather();
     sendToPubNub('Green');
   });
   $('#set-med').click(function () {
-    getWeather();
     sendToPubNub('Orange');
   });
   $('#set-high').click(function () {
-    getWeather();
     sendToPubNub('Red');
   });
   $('#set-clear').click(function () {
-    getWeather();
     sendToPubNub('Clear');
   });
   $('#new-user').click(function () {
@@ -80,6 +76,7 @@ function bindEvents() {
       lng = data.lon;
       renderMap(lat, lng);
       showInfoOnPage(data);
+      getWeather();
     });
   });
 }
