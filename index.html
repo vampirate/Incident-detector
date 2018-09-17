@@ -26,12 +26,13 @@
     <div class="container-fluid">
       <h1>Incident reported at</h1>
       <p id="location"></p>
-      <p id="weather"></p>
+      <p id="weather" style="display: none"></p>
       <div class="jumbotron" style="padding: 0.6%">
         <div class="row">
           <button id="new-user" class="btn btn-info" style="margin: 0.6%; margin-left: 1.2%;">Set a new incident
             location</button>
-          <button id="check-weather" class="btn btn-info" style="margin: 0.6%;" onclick="showWeather(getWeather);">Display weather info</button>
+          <button id="check-weather" class="btn btn-info" style="margin: 0.6%;" onclick="toggleWeather(getWeather);">Display
+            weather info</button>
           <div class="btn-group" style="padding: 0.6%">
             <button id="set-low" class="btn btn-success">Set low</button>
             <button id="set-med" class="btn btn-warning">Set med</button>

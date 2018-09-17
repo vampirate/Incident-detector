@@ -1,6 +1,5 @@
 var weatherJson;
-var weatherFlag = false;
-
+var weatherFlag = true;
 var getWeather = function () {
     const apiKey = "fa583b3fd490451806d9365adc9e302c";
     var xhttp = new XMLHttpRequest();
@@ -17,7 +16,13 @@ var getWeather = function () {
 
 
 var showWeather = function (getWeather) {
-    console.log("Showing weather2");
+    sky = JSON.stringify(weatherJson.weather[0].description);
+    temp = parseFloat(JSON.stringify(weatherJson.main.temp - 273.15)).toFixed(1);
+    humidity = JSON.stringify(weatherJson.main.humidity);
+    $('#weather').text(`The temperature is ${temp} Celcius, humidity is ${humidity}, ${sky}`);
+}
+
+var toggleWeather = function (getWeather) {
     var weatherText = document.getElementById("weather");
     var weatherButton = document.getElementById("check-weather");
 
@@ -30,9 +35,4 @@ var showWeather = function (getWeather) {
         weatherButton.innerHTML = "Display weather info"
         weatherFlag = true;
     }
-
-    sky = JSON.stringify(weatherJson.weather[0].description);
-    temp = parseFloat(JSON.stringify(weatherJson.main.temp - 273.15)).toFixed(1);
-    humidity = JSON.stringify(weatherJson.main.humidity);
-    $('#weather').text(`The temperature is ${temp} Celcius, humidity is ${humidity}, ${sky}`);
 }

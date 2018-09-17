@@ -16,9 +16,9 @@ $.get('/api/getPostcode', function (data, WURFL) {
   lat = data.lat;
   lng = data.lon;
   renderMap(lat, lng);
-  showInfoOnPage(data);
+  showLocation(data);
   getWeather();
-  showWeather(getWeather);
+  showWeather();
 });
 
 function sendToPubNub(colour) {
@@ -55,7 +55,6 @@ pubnub.subscribe({
 });
 
 function bindEvents() {
-  //Bind some events
   $('#set-low').click(function () {
     sendToPubNub('Green');
   });
@@ -75,8 +74,9 @@ function bindEvents() {
       lat = data.lat;
       lng = data.lon;
       renderMap(lat, lng);
-      showInfoOnPage(data);
+      showLocation(data);
       getWeather();
+      showWeather();
     });
   });
 }
@@ -93,7 +93,6 @@ function renderMap(lat, lon) {
   }
   google.maps.event.addDomListener(window, 'load', initMap());
 
-
   var LatLng = new google.maps.LatLng(lat, lon);
   var marker = new google.maps.Marker({
     position: LatLng,
@@ -103,6 +102,6 @@ function renderMap(lat, lon) {
 
 }
 
-function showInfoOnPage(data) {
+function showLocation(data) {
   $('#location').text(`${data.suburb}, NSW, ${data.postcode}`);
 }
