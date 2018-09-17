@@ -23,9 +23,8 @@ $.get('/api/getPostcode', function (data, WURFL) {
 
 function sendToPubNub(colour) {
   IOTPostcode.colour = colour;
-  IOTPostcode.device = Device;
+  IOTPostcode.device = navigator.platform;
   IOTPostcode.weather = weatherJson;
-  sendToDB();
 
   pubnub.publish({
       message: {
