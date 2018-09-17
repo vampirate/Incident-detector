@@ -25,6 +25,7 @@
         <div class="container-fluid">
             <h1>Last Incident detected at</h1>
             <p id="location">Location Unknown</p>
+            <p id="weather" style="display: none"></p>
 
             <div class="jumbotron" style="padding: 0.6%">
                 <div class="row">
@@ -44,6 +45,10 @@
                         <img src="images/question.png" width="40" height="40">
                         <span id="other-counter" class="text">0</span>
                     </div>
+                    <div style="margin: 0.5%;">
+                        <button id="check-weather" class="btn btn-info" onclick="toggleWeather();">Display
+                            weather info</button>
+                    </div>
                     <div style="margin: 0.5%">
                         <button onclick="eraseAllMarkers();" class="btn btn-info">Clear
                             all markers</button>
@@ -56,6 +61,24 @@
             <p>Powered by Heroku, Pubnub and Google Map API</p>
         </div>
     </body>
+
+    <script>
+        var weatherFlag = false;
+        function toggleWeather() {
+            var weatherText = document.getElementById("weather");
+            var weatherButton = document.getElementById("check-weather");
+
+            if (weatherFlag == true) {
+                weatherText.style.display = "block";
+                weatherButton.innerHTML = "Hide weather info"
+                weatherFlag = false;
+            } else {
+                weatherText.style.display = "none";
+                weatherButton.innerHTML = "Display weather info"
+                weatherFlag = true;
+            }
+        }
+    </script>
 
 
 

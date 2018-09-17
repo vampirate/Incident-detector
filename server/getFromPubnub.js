@@ -64,5 +64,10 @@ pubnub.addListener({
         $('#windows-counter').text(windowsCounter);
         $('#other-counter').text(otherCounter);
         $('#location').text(m.suburb + ", NSW " + m.postcode);
+        sky = m.weather.weather[0].description
+        temp = parseFloat(JSON.stringify(m.weather.main.temp - 273.15)).toFixed(1);
+        humidity = JSON.stringify(m.weather.main.humidity);
+        weatherLog = `The temperature is ${temp} Celcius, humidity is ${humidity}, ${sky}`;
+        $('#weather').text(`The temperature is ${temp} Celcius, humidity is ${humidity}, ${sky}`);
     }
 })

@@ -16,7 +16,7 @@ var getWeather = function () {
 
 
 var showWeather = function (getWeather) {
-    sky = JSON.stringify(weatherJson.weather[0].description);
+    sky = weatherJson.weather[0].description;
     temp = parseFloat(JSON.stringify(weatherJson.main.temp - 273.15)).toFixed(1);
     humidity = JSON.stringify(weatherJson.main.humidity);
     $('#weather').text(`The temperature is ${temp} Celcius, humidity is ${humidity}, ${sky}`);
