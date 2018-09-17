@@ -3,7 +3,6 @@ var lat = -33.8688;
 var lng = 151.2093;
 var weather;
 
-
 var pubnub = new PubNub({
   publishKey: "pub-c-9339f7dd-e9a8-41d7-b3a4-037d25972fc2",
   subscribeKey: "sub-c-34f9f230-6ef5-11e4-bcf0-02ee2ddab7fe",
@@ -20,10 +19,13 @@ $.get('/api/getPostcode', function (data, WURFL) {
   showInfoOnPage(data);
 });
 
+
+
 function sendToPubNub(colour) {
   IOTPostcode.colour = colour;
   IOTPostcode.device = Device;
   IOTPostcode.weather = weatherJson;
+  sendToDatabase(IOTPostcode.postcode, IOTPostcode.suburb, IOTPostcode.weather, IOTPostcode.colour, IOTPostcode.device);
   pubnub.publish({
       message: {
         such: IOTPostcode

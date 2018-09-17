@@ -5,11 +5,13 @@
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.9.3",
+    "browserify": "^16.2.2",
     "express": "^4.10.2",
     "mysql": "^2.16.0",
     "pubnub": "^3.16.5",
     "require": "^2.4.20",
-    "sqlite3": "^4.0.2"
+    "sqlite3": "^4.0.2",
+    "uniq": "^1.0.1"
   },
   "devDependencies": {},
   "scripts": {
