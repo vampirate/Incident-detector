@@ -25,7 +25,8 @@ function sendToPubNub(colour) {
   IOTPostcode.colour = colour;
   IOTPostcode.device = Device;
   IOTPostcode.weather = weatherJson;
-  sendToDatabase(IOTPostcode.postcode, IOTPostcode.suburb, IOTPostcode.weather, IOTPostcode.colour, IOTPostcode.device);
+  sendToDB();
+
   pubnub.publish({
       message: {
         such: IOTPostcode
@@ -109,6 +110,3 @@ function renderMap(lat, lon) {
 function showInfoOnPage(data) {
   $('#location').text(`${data.suburb}, NSW, ${data.postcode}`);
 }
-
-var Device = navigator.platform;
-console.log(`The device sending the request is ${Device}`);

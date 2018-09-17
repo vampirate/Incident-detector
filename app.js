@@ -5,7 +5,6 @@ var port = process.env.PORT || 1337; // FOR AZURE
 var counter = 0;
 var PubNub = require('pubnub')
 const request = require('request');
-const sqlite3 = require('sqlite3').verbose();
 
 
 app.use(express.static(__dirname + "/")); //IMO, leave the user-facing page as the default (less to type on phone), load the dashboard with /dashboard.html
