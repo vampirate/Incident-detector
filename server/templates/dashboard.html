@@ -52,7 +52,7 @@
                             all markers</button>
                     </div>
                     <div style="margin: 0.5%;">
-                        <button id="push-data" class="btn btn-info" onclick="pushData();">Push
+                        <button disabled id="push-data" class="btn btn-info" onclick="pushData();">Push
                             the data</button>
                     </div>
                 </div>
@@ -80,6 +80,7 @@
                 weatherButton.innerHTML = "Display weather info"
                 weatherFlag = true;
             }
+
         }
     </script>
 
@@ -94,6 +95,16 @@
             xhttp.send("postcode=" + postcode + "&weather=" + weather + "&color=" + color);
             console.log("Pushed data")
         }
+
+        function enableButton() {
+            console.log("button enabled")
+            document.getElementById("push-data").disabled = false;
+        }
+
+        $("body").on('DOMSubtreeModified', "#weather", function () {
+            enableButton();
+        });
     </script>
+
 
 </html>
