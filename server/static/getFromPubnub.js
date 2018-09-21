@@ -14,13 +14,11 @@ var pubnub = new PubNub({
 pubnub.subscribe({
     channels: ["IoT channel 1"],
 });
-
+        
 pubnub.addListener({
     message: function (msg) {
         m = msg.message.such;
         // get the lat and lon from the message body m.lat and m.lon
-
-        document.getElementById("push-data").disabled = true;
 
         var LatLng = new google.maps.LatLng(m.lat, m.lon);
         // sound effect

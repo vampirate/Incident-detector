@@ -11,7 +11,8 @@ def home():
 @app.route("/pushData", methods=['POST'])
 def pushData():
     postcode = request.form["postcode"]
-    ans = subprocess.check_output(["python", "writeToData.py", postcode])
+    weather = request.form["weather"]
+    ans = subprocess.check_output(["python", "writeToData.py", postcode, weather])
     print(ans.decode("utf-8"))
     return(ans.decode("utf-8"))
 

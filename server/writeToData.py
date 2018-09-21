@@ -1,5 +1,13 @@
 import sys
+import json
 
-data = str(sys.argv[1])
+weather = str(sys.argv[2])
+postcode = str(sys.argv[1])
 
-print(data)
+f = open('data.csv', 'a')
+string = postcode + "," + weather + "\n"
+f.write(string)  # Give your csv text here.
+## Python will convert \n to os.linesep
+f.close()
+
+print(postcode)

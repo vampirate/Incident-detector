@@ -52,7 +52,7 @@
                             all markers</button>
                     </div>
                     <div style="margin: 0.5%;">
-                        <button disabled id="push-data" class="btn btn-info" onclick="pushData();">Push
+                        <button id="push-data" class="btn btn-info" onclick="pushData();">Push
                             the data</button>
                     </div>
                 </div>
@@ -85,11 +85,13 @@
 
     <script>
         function pushData() {
-            var input = m.postcode;
+            var postcode = m.postcode;
+            var weather = m.weather.weather[0].description;
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", "{{ url_for('pushData') }}", true);
             xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhttp.send("postcode=" + input);
+            xhttp.send("postcode=" + postcode + "&weather=" + weather);
+            console.log("Pushed data")
         }
     </script>
 
