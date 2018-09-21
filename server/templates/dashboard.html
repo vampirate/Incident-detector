@@ -8,16 +8,14 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
             integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="serverCSS.css">
-
+        <link rel="stylesheet" href="{{ url_for('static', filename = "serverCSS.css") }}">
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6C7cZM_BmEySiVB5l_-4ahYp1VtQ5ciE"></script>
         <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.5.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="getFromPubnub.js"></script>
-        <script src="map.js"></script>
+        <script src="{{ url_for('static', filename = "getFromPubnub.js") }}"></script>
+        <script src="{{ url_for('static', filename = "map.js") }}"></script>
     </head>
-
 
     <body>
         <div id="map"></div>
@@ -30,19 +28,19 @@
             <div class="jumbotron" style="padding: 0.6%">
                 <div class="row">
                     <div style="margin: 0.5%; margin-left: 1.2%;">
-                        <img src="images/rsz_apple.png" width="40" height="40">
+                        <img src="{{ url_for('static', filename = "images/apple.png") }}" width=" 40" height="40">
                         <span id="apple-counter" class="text">0</span>
                     </div>
                     <div style="margin: 0.5%">
-                        <img src="images/android.png" width="40" height="40">
+                        <img src="{{ url_for('static', filename = "images/android.png") }}" width="40" height="40">
                         <span id="android-counter" class="text">0</span>
                     </div>
                     <div style="margin: 0.5%">
-                        <img src="images/windows.png" width="40" height="40">
+                        <img src="{{ url_for('static', filename = "images/windows.png") }}" width="40" height="40">
                         <span id="windows-counter" class="text">0</span>
                     </div>
                     <div style="margin: 0.5%">
-                        <img src="images/question.png" width="40" height="40">
+                        <img src="{{ url_for('static', filename = "images/question.png") }}" width="40" height="40">
                         <span id="other-counter" class="text">0</span>
                     </div>
                     <div style="margin: 0.5%;">
@@ -52,6 +50,10 @@
                     <div style="margin: 0.5%">
                         <button onclick="eraseAllMarkers();" class="btn btn-info">Clear
                             all markers</button>
+                    </div>
+                    <div style="margin: 0.5%;">
+                        <button disabled id="push-data" class="btn btn-info" onclick="pushData();">Push
+                            the data</button>
                     </div>
                 </div>
             </div>
@@ -64,6 +66,7 @@
 
     <script>
         var weatherFlag = false;
+
         function toggleWeather() {
             var weatherText = document.getElementById("weather");
             var weatherButton = document.getElementById("check-weather");
@@ -80,6 +83,14 @@
         }
     </script>
 
-
+    <script>
+        function pushData() {
+            var input = m.postcode;
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "{{ url_for('pushData') }}", true);
+            xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhttp.send("postcode=" + input);
+        }
+    </script>
 
 </html>

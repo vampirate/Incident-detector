@@ -2,8 +2,8 @@ var appleCounter = 0;
 var androidCounter = 0;
 var windowsCounter = 0;
 var otherCounter = 0;
-var pop = new Audio("sound/pop.mp3");
-var ping = new Audio("sound/ping.mp3");
+var pop = new Audio("static/sound/pop.mp3");
+var ping = new Audio("static/sound/ping.mp3");
 var m;
 
 var pubnub = new PubNub({
@@ -19,6 +19,8 @@ pubnub.addListener({
     message: function (msg) {
         m = msg.message.such;
         // get the lat and lon from the message body m.lat and m.lon
+
+        document.getElementById("push-data").disabled = true;
 
         var LatLng = new google.maps.LatLng(m.lat, m.lon);
         // sound effect
