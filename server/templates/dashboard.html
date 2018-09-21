@@ -87,10 +87,11 @@
         function pushData() {
             var postcode = m.postcode;
             var weather = m.weather.weather[0].description;
+            var color = m.colour;
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", "{{ url_for('pushData') }}", true);
             xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhttp.send("postcode=" + postcode + "&weather=" + weather);
+            xhttp.send("postcode=" + postcode + "&weather=" + weather + "&color=" + color);
             console.log("Pushed data")
         }
     </script>

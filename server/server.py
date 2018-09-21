@@ -12,7 +12,9 @@ def home():
 def pushData():
     postcode = request.form["postcode"]
     weather = request.form["weather"]
-    ans = subprocess.check_output(["python", "writeToData.py", postcode, weather])
+    color = request.form["color"]
+    ans = subprocess.check_output(
+        ["python", "writeToData.py", postcode, weather, color])
     print(ans.decode("utf-8"))
     return(ans.decode("utf-8"))
 
