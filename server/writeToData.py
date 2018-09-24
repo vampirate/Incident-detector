@@ -7,8 +7,8 @@ color = str(sys.argv[3])
 
 f = open('data.csv', 'a')
 string = postcode + "," + weather + "," + color + "\n"
-f.write(string)  # Give your csv text here.
-## Python will convert \n to os.linesep
+f.tell
+f.write(string)
 f.close()
 
 print(postcode)
