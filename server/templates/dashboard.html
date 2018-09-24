@@ -17,7 +17,7 @@
         <script src="{{ url_for('static', filename = "map.js") }}"></script>
     </head>
 
-    <body onLoad="buildHtmlTable()">
+    <body>
         <div id="map"></div>
         <hr>
         <div class="container-fluid">
@@ -89,50 +89,45 @@
     </script>
 
     <script>
+        var myList;
+
+        var getData = function (pushData) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("excelDataTable").innerHTML = "";
+                    console.log(this.responseText)
+                    myList = JSON.parse(this.responseText);
+                    showData();
+                }
+            };
+            xhttp.open("GET", "{{ url_for('getData') }}", false);
+            xhttp.send();
+        }
+        getData();
+
         function pushData() {
+            var suburb = m.suburb;
             var postcode = m.postcode;
             var weather = m.weather.weather[0].description;
             var color = m.colour;
             var xhttp2 = new XMLHttpRequest();
-            xhttp2.open("POST", "{{ url_for('pushData') }}", true);
+            xhttp2.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    getData();
+                }
+            }
+            xhttp2.open("POST", "{{ url_for('pushData') }}", false);
             xhttp2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhttp2.send("postcode=" + postcode + "&weather=" + weather + "&color=" + color);
+            xhttp2.send("suburb=" + suburb + "&postcode=" + postcode + "&weather=" + weather + "&color=" + color);
             console.log("Pushed data")
-            showData();
         }
-
-        $("body").on('DOMSubtreeModified', "#weather", function () {
-            document.getElementById("push-data").disabled = false;
-        });
-    </script>
-
-    <script>
-        var myList;
 
         function showData() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    //document.getElementById("table").innerHTML = this.responseText;
-                    myList = this.responseText;
-                    console.log(myList)
-                }
-            };
-
-            xhttp.open("GET", "{{ url_for('getData') }}", true);
-            xhttp.send();
-        }
-
-        showData();
-    </script>
-
-    <script>
-        function buildHtmlTable() {
+            //
             var columns = addAllColumnHeaders(myList);
-
-            for (var i = 0; i <
-                myList.length; i++) {
-                var row$ = $('<tr/>');
+            for (var i = 0; i < myList.length; i++) {
+                var row$ = $('<tr />');
                 for (var colIndex = 0; colIndex < columns.length; colIndex++) {
                     var cellValue = myList[i][columns[colIndex]];
                     if (cellValue == null) {
@@ -144,27 +139,25 @@
             }
         }
 
-        // Adds a header row to the table and returns the set of columns.
-        // Need to do union of keys from all records as some records may not contain
-        // all records
         function addAllColumnHeaders(myList) {
             var columnSet = [];
             var headerTr$ = $('<tr/>');
-
-            for (var i = 0; i <
-                myList.length; i++) {
+            for (var i = 0; i < myList.length; i++) {
                 var rowHash = myList[i];
                 for (var key in rowHash) {
                     if ($.inArray(key, columnSet) == -1) {
                         columnSet.push(key);
-                        headerTr$.append($('<th/>').html(key));
+                        headerTr$.append($('<th />').html(key));
                     }
                 }
             }
             $("#excelDataTable").append(headerTr$);
-
             return columnSet;
         }
+
+        $("body").on('DOMSubtreeModified', "#weather", function () {
+            document.getElementById("push-data").disabled = false;
+        });
     </script>
 
 </html>

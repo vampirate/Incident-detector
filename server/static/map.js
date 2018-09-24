@@ -51,7 +51,6 @@ function updateWeather() {
     temp = parseFloat(JSON.stringify(m.weather.main.temp - 273.15)).toFixed(1);
     humidity = JSON.stringify(m.weather.main.humidity);
     weatherLog = `The temperature is ${temp} Celcius, humidity is ${humidity}, ${sky}`;
-    console.log(weatherLog);
 }
 
 function eraseAllMarkers() {
