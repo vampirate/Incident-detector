@@ -59,11 +59,10 @@
                         <button id="delete-data" class="btn btn-info" onclick="deleteData();">Delete
                             the data</button>
                     </div>
-                    <div id="table"></div>
-                    <div>
-                        <table id="excelDataTable" border="1"></table>
-                    </div>
                 </div>
+            </div>
+            <div>
+                <table id="table" border="1" cellpadding="7"></table>
             </div>
         </div>
 
@@ -101,7 +100,7 @@
             var getDataRequest = new XMLHttpRequest();
             getDataRequest.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("excelDataTable").innerHTML = "";
+                    document.getElementById("table").innerHTML = "";
                     myList = JSON.parse(this.responseText);
                     showData();
                 }
@@ -141,7 +140,7 @@
                     }
                     row$.append($('<td/>').html(cellValue));
                 }
-                $("#excelDataTable").append(row$);
+                $("#table").append(row$);
             }
         }
 
@@ -153,11 +152,11 @@
                 for (var key in rowHash) {
                     if ($.inArray(key, columnSet) == -1) {
                         columnSet.push(key);
-                        headerTr$.append($('<th />').html(key));
+                        headerTr$.append($('<th/>').html(key));
                     }
                 }
             }
-            $("#excelDataTable").append(headerTr$);
+            $("#table").append(headerTr$);
             return columnSet;
         }
 
@@ -166,7 +165,7 @@
             var deleteDataRequest = new XMLHttpRequest();
             deleteDataRequest.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("excelDataTable").innerHTML = "";
+                    document.getElementById("table").innerHTML = "";
                     myList = JSON.parse(this.responseText);
                     showData();
                 }
