@@ -55,6 +55,10 @@
                         <button disabled id="push-data" class="btn btn-info" onclick="pushData();">Push
                             the data</button>
                     </div>
+                    <div style="margin: 0.5%;">
+                        <button id="delete-data" class="btn btn-info" onclick="deleteData();">Delete
+                            the data</button>
+                    </div>
                     <div id="table"></div>
                     <div>
                         <table id="excelDataTable" border="1"></table>
@@ -72,6 +76,7 @@
         var weatherFlag = false;
 
         function toggleWeather() {
+            console.log("Toggling weather")
             var weatherText = document.getElementById("weather");
             var weatherButton = document.getElementById("check-weather");
 
@@ -92,38 +97,40 @@
         var myList;
 
         var getData = function (pushData) {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
+            console.log("Getting data from CSV")
+            var getDataRequest = new XMLHttpRequest();
+            getDataRequest.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("excelDataTable").innerHTML = "";
-                    console.log(this.responseText)
                     myList = JSON.parse(this.responseText);
                     showData();
                 }
             };
-            xhttp.open("GET", "{{ url_for('getData') }}", false);
-            xhttp.send();
+            getDataRequest.open("GET", "{{ url_for('getData') }}", false);
+            getDataRequest.send();
         }
         getData();
 
         function pushData() {
+            console.log("Pushing data to CSV")
             var suburb = m.suburb;
             var postcode = m.postcode;
             var weather = m.weather.weather[0].description;
             var color = m.colour;
-            var xhttp2 = new XMLHttpRequest();
-            xhttp2.onreadystatechange = function () {
+            var pushDataRequest = new XMLHttpRequest();
+            pushDataRequest.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     getData();
                 }
             }
-            xhttp2.open("POST", "{{ url_for('pushData') }}", false);
-            xhttp2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhttp2.send("suburb=" + suburb + "&postcode=" + postcode + "&weather=" + weather + "&color=" + color);
-            console.log("Pushed data")
+            pushDataRequest.open("POST", "{{ url_for('pushData') }}", false);
+            pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&weather=" + weather + "&color=" +
+                color);
         }
 
         function showData() {
+            console.log("Showing data")
             var columns = addAllColumnHeaders(myList);
             for (var i = 0; i < myList.length; i++) {
                 var row$ = $('<tr/>');
@@ -152,6 +159,20 @@
             }
             $("#excelDataTable").append(headerTr$);
             return columnSet;
+        }
+
+        function deleteData() {
+            console.log("Deleting data")
+            var deleteDataRequest = new XMLHttpRequest();
+            deleteDataRequest.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("excelDataTable").innerHTML = "";
+                    myList = JSON.parse(this.responseText);
+                    showData();
+                }
+            }
+            deleteDataRequest.open("GET", "{{ url_for('deleteData') }}", false);
+            deleteDataRequest.send();
         }
 
         $("body").on('DOMSubtreeModified', "#weather", function () {
