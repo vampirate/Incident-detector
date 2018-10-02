@@ -1,5 +1,6 @@
 var weatherJson;
 var weatherFlag = true;
+
 var getWeather = function () {
     const apiKey = "fa583b3fd490451806d9365adc9e302c";
     var xhttp = new XMLHttpRequest();

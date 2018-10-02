@@ -99,7 +99,6 @@ function renderMap(lat, lon) {
     animation: google.maps.Animation.DROP,
     map: map
   });
-
 }
 
 function showLocation(data) {

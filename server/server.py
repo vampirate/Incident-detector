@@ -29,7 +29,6 @@ def getData():
     print("Got data")
     return (json.dumps(data))
 
-
 @app.route("/deleteData", methods=["GET"])
 def deleteData():
     df = pd.read_csv("data.csv")
