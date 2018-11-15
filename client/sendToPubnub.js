@@ -30,7 +30,7 @@ function sendToPubNub(colour) {
       message: {
         such: IOTPostcode
       },
-      channel: 'IoT channel 1',
+      channel: 'iot',
       sendByPost: false, // true to send via post
       storeInHistory: false, //override default storage options
       meta: {
@@ -45,13 +45,14 @@ function sendToPubNub(colour) {
       } else {
         console.log(`Published: ${IOTPostcode.postcode} with color ${colour}`);
         console.log(IOTPostcode.weather);
+        console.log("WHOEL THING IS: " + JSON.stringify(IOTPostcode))
       }
     }
   );
 }
 
 pubnub.subscribe({
-  channels: ["IoT channel 1"],
+  channels: ["iot"],
 });
 
 function bindEvents() {

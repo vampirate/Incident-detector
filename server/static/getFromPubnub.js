@@ -5,6 +5,8 @@ var otherCounter = 0;
 var pop = new Audio("static/sound/pop.mp3");
 var ping = new Audio("static/sound/ping.mp3");
 var m;
+var lat;
+var lng;
 
 var pubnub = new PubNub({
     subscribeKey: "sub-c-34f9f230-6ef5-11e4-bcf0-02ee2ddab7fe",
@@ -12,15 +14,17 @@ var pubnub = new PubNub({
 });
 
 pubnub.subscribe({
-    channels: ["IoT channel 1"],
+    channels: ["iot"],
 });
         
 pubnub.addListener({
     message: function (msg) {
-        m = msg.message.such;
+        m = msg.message;
+        console.log("RECEIVED: " + JSON.stringify(m))
         // get the lat and lon from the message body m.lat and m.lon
-
-        var LatLng = new google.maps.LatLng(m.lat, m.lon);
+        lat = m.lat;
+        lng = m.lon
+        var LatLng = new google.maps.LatLng(lat, lng);
         // sound effect
         var mySound;
         if (m.colour == 'Clear') {
@@ -28,7 +32,8 @@ pubnub.addListener({
         } else {
             ping.play();
         }
-
+        getWeather();
+        showWeather();
         if (m.postcode) {
             placeMarker(m);
         }
