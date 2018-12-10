@@ -12,6 +12,7 @@ def home():
 
 @app.route("/pushData", methods=["POST"])
 def pushData():
+    print("Pushed data")
     suburb = request.form["suburb"]
     postcode = request.form["postcode"]
     weather = request.form["weather"]

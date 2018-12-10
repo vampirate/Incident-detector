@@ -3,7 +3,6 @@ var markers = [];
 var defaultLat = -33.8688
 var defaultLng = 151.2093
 var defaultLatLng = new google.maps.LatLng(defaultLat, defaultLng);
-var weatherLog;
 
 function initMap() {
     var mapOptions = {
@@ -31,9 +30,8 @@ function placeMarker(m) {
 
     markers.push(marker);
     var contentString = `${m.suburb}, NSW, ${m.postcode}<br>Code: ${m.colour}`;
-    updateWeather();
     var infowindow = new google.maps.InfoWindow({
-        content: `${contentString}<br>${weatherLog}`
+        content: `${contentString}<br>`
     });
 
     marker.addListener('click', function () {
@@ -44,13 +42,6 @@ function placeMarker(m) {
             infowindow.close();
         }, 3000);
     });
-}
-
-function updateWeather() {
-    sky = m.weather.weather[0].description
-    temp = parseFloat(JSON.stringify(m.weather.main.temp - 273.15)).toFixed(1);
-    humidity = JSON.stringify(m.weather.main.humidity);
-    weatherLog = `The temperature is ${temp} Celcius, humidity is ${humidity}, ${sky}`;
 }
 
 function eraseAllMarkers() {

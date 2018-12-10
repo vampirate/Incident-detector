@@ -115,7 +115,7 @@
             console.log("Pushing data to CSV")
             var suburb = m.suburb;
             var postcode = m.postcode;
-            var weather = m.weather.weather[0].description;
+            var weather = m.weather;
             var color = m.colour;
             var pushDataRequest = new XMLHttpRequest();
             pushDataRequest.onreadystatechange = function () {
@@ -127,6 +127,7 @@
             pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&weather=" + weather + "&color=" +
                 color);
+            console.log("Pushed data to CSV")
         }
 
         function showData() {
