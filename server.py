@@ -17,8 +17,9 @@ def pushData():
     postcode = request.form["postcode"]
     temp = request.form["temp"]
     pressure = request.form["pressure"]
+    photo = request.form["photo"]
     ans = subprocess.check_output(
-        ["python", "writeToData.py", suburb, postcode, temp, pressure])
+        ["python", "writeToData.py", suburb, postcode, temp, pressure, photo])
     print("Pushed data")
     return(ans.decode("utf-8"))
 

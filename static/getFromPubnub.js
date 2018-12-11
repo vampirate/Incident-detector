@@ -11,6 +11,7 @@ var suburb;
 var postcode;
 var temp;
 var pressure;
+var photo;
 var colour;
 var device;
 
@@ -41,12 +42,13 @@ pubnub.addListener({
         postcode = m.postcode;
         temp = m.temp/100;
         pressure = m.pressure * 3;
+        photo = m.photo;
         colour = m.colour
         device = m.device;
         getWeather();
         showWeather();
         placeMarker(m);
-        $('#deviceData').text(`The measured temperature is ${temp} Celcius, pressure is ${pressure} Pascal`);
+        $('#device-data').text(`The measured temperature is ${temp} Celcius, pressure is ${pressure} Pascal`);
 
         //now increment device counts
 

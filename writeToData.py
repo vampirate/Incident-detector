@@ -3,11 +3,12 @@ import json
 
 suburb = str(sys.argv[1])
 postcode = str(sys.argv[2])
-weather = str(sys.argv[3])
-color = str(sys.argv[4])
+temp = str(sys.argv[3])
+pressure = str(sys.argv[4])
+photo = str(sys.argv[5])
 
 f = open('data.csv', 'a')
-string = suburb + "," + postcode + "," + weather + "," + color + "\n"
+string = suburb + "," + postcode + "," + temp + "," + pressure + "," + photo + "\n"
 f.tell
 f.write(string)
 f.close()

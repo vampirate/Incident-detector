@@ -29,7 +29,7 @@ function placeMarker(m) {
     });
 
     markers.push(marker);
-    var contentString = `${suburb}, NSW, ${postcode}<br>Code: ${colour}<br>Device temp: ${temp}, Pressure: ${pressure}`;
+    var contentString = `${suburb}, NSW, ${postcode}<br>Code: ${colour}<br>Device temp: ${temp} C, Pressure: ${pressure} Pa, Photoelectric: ${photo} mV`;
     var infowindow = new google.maps.InfoWindow({
         content: `${contentString}<br>`
     });

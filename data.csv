@@ -1,4 +1,3 @@
-Suburb,Postcode,temp,pressure
-HOMEBUSH,2140,2560,33940
-HOMEBUSH,2140,2558,33941
-HOMEBUSH,2140,2571,33942
+Suburb,Postcode,Temperature (C),Pressure (Pa),Photoelectric (mV)
+HOMEBUSH,2140,24.77,101523,693
+HOMEBUSH,2140,24.77,101523,693
