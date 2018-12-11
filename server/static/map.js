@@ -15,7 +15,7 @@ function initMap() {
 google.maps.event.addDomListener(window, 'load', initMap);
 
 function placeMarker(m) {
-    var LatLng = new google.maps.LatLng(m.lat, m.lon);
+    var LatLng = new google.maps.LatLng(latitude, longitude);
     var marker = new google.maps.Marker({
         icon: {
             path: google.maps.SymbolPath.CIRCLE,
@@ -29,7 +29,7 @@ function placeMarker(m) {
     });
 
     markers.push(marker);
-    var contentString = `${m.suburb}, NSW, ${m.postcode}<br>Code: ${m.colour}`;
+    var contentString = `${suburb}, NSW, ${postcode}<br>Code: ${colour}<br>Device temp: ${temp}, Pressure: ${pressure}`;
     var infowindow = new google.maps.InfoWindow({
         content: `${contentString}<br>`
     });

@@ -15,10 +15,10 @@ def pushData():
     print("Pushed data")
     suburb = request.form["suburb"]
     postcode = request.form["postcode"]
-    weather = request.form["weather"]
-    color = request.form["color"]
+    temp = request.form["temp"]
+    pressure = request.form["pressure"]
     ans = subprocess.check_output(
-        ["python", "writeToData.py", suburb, postcode, weather, color])
+        ["python", "writeToData.py", suburb, postcode, temp, pressure])
     print("Pushed data")
     return(ans.decode("utf-8"))
 

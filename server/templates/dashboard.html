@@ -24,7 +24,8 @@
         <div class="container-fluid">
             <h1>Last Incident detected at</h1>
             <p id="location">Location Unknown</p>
-            <p id="weather" style="display: none"></p>
+            <p id="deviceData" style="display: none"></p>
+            <p id="weather"></p>
 
             <div class="jumbotron" style="padding: 0.6%">
                 <div class="row">
@@ -45,8 +46,8 @@
                         <span id="other-counter" class="text">0</span>
                     </div>
                     <div style="margin: 0.5%;">
-                        <button id="check-weather" class="btn btn-info" onclick="toggleWeather();">Display
-                            weather info</button>
+                        <button id="check-deviceData" class="btn btn-info" onclick="toggleDeviceData();">Display
+                            device info</button>
                     </div>
                     <div style="margin: 0.5%">
                         <button onclick="eraseAllMarkers();" class="btn btn-info">Clear
@@ -73,21 +74,21 @@
     </body>
 
     <script>
-        var weatherFlag = false;
+        var deviceDataFlag = false;
 
-        function toggleWeather() {
-            console.log("Toggling weather")
-            var weatherText = document.getElementById("weather");
-            var weatherButton = document.getElementById("check-weather");
+        function toggleDeviceData() {
+            console.log("Toggling Device Data")
+            var deviceDataText = document.getElementById("deviceData");
+            var deviceDataButton = document.getElementById("check-deviceData");
 
-            if (weatherFlag == true) {
-                weatherText.style.display = "block";
-                weatherButton.innerHTML = "Hide weather info"
-                weatherFlag = false;
+            if (deviceDataFlag == true) {
+                deviceDataText.style.display = "block";
+                deviceDataButton.innerHTML = "Hide device info"
+                deviceDataFlag = false;
             } else {
-                weatherText.style.display = "none";
-                weatherButton.innerHTML = "Display weather info"
-                weatherFlag = true;
+                deviceDataText.style.display = "none";
+                deviceDataButton.innerHTML = "Display device info"
+                deviceDataFlag = true;
             }
 
         }
@@ -95,6 +96,21 @@
 
     <script>
         var myList;
+        function pushData() {
+            console.log("Pushing data to CSV")
+
+            var pushDataRequest = new XMLHttpRequest();
+            pushDataRequest.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    getData();
+                }
+            }
+            pushDataRequest.open("POST", "{{ url_for('pushData') }}", false);
+            pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + temp + "&pressure=" + pressure);
+            console.log("Pushed data to CSV")
+        }
+
 
         var getData = function (pushData) {
             console.log("Getting data from CSV")
@@ -110,25 +126,6 @@
             getDataRequest.send();
         }
         getData();
-
-        function pushData() {
-            console.log("Pushing data to CSV")
-            var suburb = m.suburb;
-            var postcode = m.postcode;
-            var weather = m.weather;
-            var color = m.colour;
-            var pushDataRequest = new XMLHttpRequest();
-            pushDataRequest.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    getData();
-                }
-            }
-            pushDataRequest.open("POST", "{{ url_for('pushData') }}", false);
-            pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&weather=" + weather + "&color=" +
-                color);
-            console.log("Pushed data to CSV")
-        }
 
         function showData() {
             console.log("Showing data")
@@ -176,7 +173,7 @@
             deleteDataRequest.send();
         }
 
-        $("body").on('DOMSubtreeModified', "#weather", function () {
+        $("body").on('DOMSubtreeModified', "#deviceData", function () {
             document.getElementById("push-data").disabled = false;
         });
     </script>
