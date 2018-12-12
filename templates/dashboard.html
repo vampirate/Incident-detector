@@ -1,13 +1,11 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
     <head>
         <title>Incident Report Server</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ url_for('static', filename = "serverCSS.css") }}">
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6C7cZM_BmEySiVB5l_-4ahYp1VtQ5ciE"></script>
@@ -15,12 +13,12 @@ s<!DOCTYPE html>
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="{{ url_for('static', filename = "getFromPubnub.js") }}"></script>
         <script src="{{ url_for('static', filename = "map.js") }}"></script>
-        <script src="{{ url_for('static', filename = "getWeather.js") }}""></script>
+        <script src="{{ url_for('static', filename = "getWeather.js") }}"></script>
     </head>
 
     <body>
         <div id="map"></div>
-        <hr>
+        <hr></hr>
         <div class="container-fluid">
             <h1>Last Incident detected at</h1>
             <p id="location">Location Unknown</p>
@@ -107,10 +105,9 @@ s<!DOCTYPE html>
             }
             pushDataRequest.open("POST", "{{ url_for('pushData') }}", false);
             pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + temp + "&pressure=" + pressure + "&photo=" + photo);
+pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + temp + "&pressure=" + pressure + "&photo=" + photo + "&time=" + time);
             console.log("Pushed data to CSV")
         }
-
 
         var getData = function (pushData) {
             console.log("Getting data from CSV")

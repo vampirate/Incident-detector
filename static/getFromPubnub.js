@@ -12,6 +12,7 @@ var postcode;
 var temp;
 var pressure;
 var photo;
+var time;
 var colour;
 var device;
 
@@ -43,11 +44,13 @@ pubnub.addListener({
         temp = m.temp/100;
         pressure = m.pressure * 3;
         photo = m.photo;
+        time = m.time;
         colour = m.colour
         device = m.device;
         getWeather();
         showWeather();
         placeMarker(m);
+        pushData();
         $('#device-data').text(`The measured temperature is ${temp} Celcius, pressure is ${pressure} Pascal`);
 
         //now increment device counts
