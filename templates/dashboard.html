@@ -43,20 +43,24 @@
                         <span id="other-counter" class="text">0</span>
                     </div>
                     <div style="margin: 0.5%;">
-                        <button id="check-device-data" class="btn btn-info" onclick="toggleDeviceData();">Display
+                        <button id="check-device-data" class="btn btn-info" onclick="toggleDeviceData()">Display
                             device info</button>
                     </div>
                     <div style="margin: 0.5%">
-                        <button onclick="eraseAllMarkers();" class="btn btn-info">Clear
+                        <button onclick="eraseAllMarkers()" class="btn btn-info">Clear
                             all markers</button>
                     </div>
                     <div style="margin: 0.5%;">
-                        <button disabled id="push-data" class="btn btn-info" onclick="pushData();">Push
+                        <button disabled id="push-data" class="btn btn-info" onclick="pushData()">Push
                             the data</button>
                     </div>
                     <div style="margin: 0.5%;">
-                        <button id="delete-data" class="btn btn-info" onclick="deleteData();">Delete
+                        <button id="delete-data" class="btn btn-info" onclick="deleteData()">Delete
                             the data</button>
+                    </div>
+                    <div style="margin: 0.5%;">
+<button id="open-simulator" class="btn btn-info" onclick="openSimulator()">Open
+    the simulator</button>
                     </div>
                 </div>
             </div>
@@ -104,7 +108,7 @@
             }
             pushDataRequest.open("POST", "{{ url_for('pushData') }}", false);
             pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + temp + "&pressure=" + pressure + "&photo=" + photo + "&time=" + time);
+pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + temp + "&pressure=" + pressure + "&photo=" + photo + "&time=" + time + "&device=" + device);
             console.log("Pushed data to CSV")
         }
 
@@ -167,6 +171,16 @@ pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + t
             }
             deleteDataRequest.open("GET", "{{ url_for('deleteData') }}", false);
             deleteDataRequest.send();
+        }
+
+        function openSimulator() {
+            var openSimulator = new XMLHttpRequest();
+            openSimulator.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                }
+            }
+            openSimulator.open("GET", "{{ url_for('openSimulator') }}", false);
+            openSimulator.send();
         }
 
         $("body").on('DOMSubtreeModified', "#device-data", function () {

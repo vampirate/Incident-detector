@@ -7,9 +7,10 @@ temp = str(sys.argv[3])
 pressure = str(sys.argv[4])
 photo = str(sys.argv[5])
 time = str(sys.argv[6])
+device = str(sys.argv[7])
 
 f = open('data.csv', 'a')
-string = suburb + "," + postcode + "," + temp + "," + pressure + "," + photo + "," + time + "\n"
+string = suburb + "," + postcode + "," + temp + "," + pressure + "," + photo + "," + time + "," + device + "\n"
 f.tell
 f.write(string)
 f.close()

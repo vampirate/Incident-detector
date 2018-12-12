@@ -19,8 +19,9 @@ def pushData():
     pressure = request.form["pressure"]
     photo = request.form["photo"]
     time = request.form["time"]
+    device = request.form["device"]
     ans = subprocess.check_output(
-        ["python", "writeToData.py", suburb, postcode, temp, pressure, photo, time])
+        ["python", "writeToData.py", suburb, postcode, temp, pressure, photo, time, device])
     print("Pushed data")
     return(ans.decode("utf-8"))
 
@@ -41,6 +42,11 @@ def deleteData():
     data = [dict(i) for i in temp]
     print("Deleted data")
     return (json.dumps(data))
+
+
+@app.route("/openSimulator", methods=["GET"])
+def openSimulator():
+    return render_template("dashboard.html")
 
 @app.after_request
 def add_header(response):
