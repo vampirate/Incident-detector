@@ -109,11 +109,11 @@
             pushDataRequest.open("POST", "{{ url_for('pushData') }}", false);
             pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + temp + "&pressure=" + pressure + "&photo=" + photo + "&time=" + time + "&device=" + device);
-            console.log("Pushed data to CSV")
+            //console.log("Pushed data to CSV")
         }
 
         var getData = function (pushData) {
-            console.log("Getting data from CSV")
+            //console.log("Getting data from CSV")
             var getDataRequest = new XMLHttpRequest();
             getDataRequest.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -128,7 +128,7 @@ pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + t
         getData();
 
         function showData() {
-            console.log("Showing data")
+            //console.log("Showing data")
             var columns = addAllColumnHeaders(myList);
             for (var i = 0; i < myList.length; i++) {
                 var row$ = $('<tr/>');
@@ -160,7 +160,7 @@ pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + t
         }
 
         function deleteData() {
-            console.log("Deleting data")
+            //console.log("Deleting data")
             var deleteDataRequest = new XMLHttpRequest();
             deleteDataRequest.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
