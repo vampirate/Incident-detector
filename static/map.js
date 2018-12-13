@@ -6,7 +6,7 @@ var defaultLatLng = new google.maps.LatLng(defaultLat, defaultLng);
 
 function initMap() {
     var mapOptions = {
-        zoom: 5,
+        zoom: 10,
         center: new google.maps.LatLng(defaultLat, defaultLng)
     };
 
@@ -32,10 +32,13 @@ function placeMarker(m) {
     var contentString = `${suburb}, NSW, ${postcode}<br>Code: ${colour}<br>Device temp: ${temp} C, Pressure: ${pressure} Pa, Photoelectric: ${photo} mV`;
     var infowindow = new google.maps.InfoWindow({
         content: `${contentString}<br>`
-    });
+    }); 
+
+    map.setZoom(13);
+    map.setCenter(marker.getPosition());
 
     marker.addListener('click', function () {
-        map.setZoom(7);
+        map.setZoom(13);
         map.setCenter(marker.getPosition());
         infowindow.open(map, marker);
         window.setTimeout(function () {

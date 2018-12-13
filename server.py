@@ -15,13 +15,16 @@ def pushData():
     print("Pushed data")
     suburb = request.form["suburb"]
     postcode = request.form["postcode"]
+    lat = request.form["lat"]
+    lon = request.form["lon"]
     temp = request.form["temp"]
     pressure = request.form["pressure"]
     photo = request.form["photo"]
     time = request.form["time"]
     device = request.form["device"]
+    
     ans = subprocess.check_output(
-        ["python", "writeToData.py", suburb, postcode, temp, pressure, photo, time, device])
+        ["python", "writeToData.py", suburb, postcode, lat, lon, temp, pressure, photo, time, device])
     print("Pushed data")
     return(ans.decode("utf-8"))
 
@@ -55,4 +58,4 @@ def add_header(response):
     return response
 
 if __name__ == '__main__':
-   app.run(debug=True)
+   app.run(host="0.0.0.0", port=80)

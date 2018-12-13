@@ -108,7 +108,8 @@
             }
             pushDataRequest.open("POST", "{{ url_for('pushData') }}", false);
             pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&temp=" + temp + "&pressure=" + pressure + "&photo=" + photo + "&time=" + time + "&device=" + device);
+pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&lat=" + latitude + "&lon=" + longitude +
+"&temp=" + temp + "&pressure=" + pressure + "&photo=" + photo + "&time=" + time + "&device=" + device);
             //console.log("Pushed data to CSV")
         }
 
