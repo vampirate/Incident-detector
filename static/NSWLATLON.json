@@ -1,0 +1,3730 @@
+[
+  {
+    "postcode":2000,
+    "suburb":"DAWES POINT",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.855601,
+    "lon":151.20822
+  },
+  {
+    "postcode":2000,
+    "suburb":"HAYMARKET",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.880777,
+    "lon":151.202796
+  },
+  {
+    "postcode":2000,
+    "suburb":"MILLERS POINT",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.858315,
+    "lon":151.203519
+  },
+  {
+    "postcode":2000,
+    "suburb":"PARLIAMENT HOUSE",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.867229,
+    "lon":151.213051
+  },
+  {
+    "postcode":2000,
+    "suburb":"SYDNEY",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.867139,
+    "lon":151.207114
+  },
+  {
+    "postcode":2000,
+    "suburb":"SYDNEY SOUTH",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.877718,
+    "lon":151.205723
+  },
+  {
+    "postcode":2000,
+    "suburb":"THE ROCKS",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.859251,
+    "lon":151.208782
+  },
+  {
+    "postcode":2006,
+    "suburb":"THE UNIVERSITY OF SYDNEY",
+    "state":"NSW",
+    "dc":"SYDNEY UNIVERSITY LPO",
+    "lat":-33.887926,
+    "lon":151.186923
+  },
+  {
+    "postcode":2007,
+    "suburb":"BROADWAY",
+    "state":"NSW",
+    "dc":"BROADWAY POST SHOP",
+    "lat":-33.884366,
+    "lon":151.196502
+  },
+  {
+    "postcode":2007,
+    "suburb":"ULTIMO",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.878416,
+    "lon":151.197272
+  },
+  {
+    "postcode":2008,
+    "suburb":"CHIPPENDALE",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.886844,
+    "lon":151.201715
+  },
+  {
+    "postcode":2008,
+    "suburb":"DARLINGTON",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.891348,
+    "lon":151.191243
+  },
+  {
+    "postcode":2009,
+    "suburb":"PYRMONT",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.869709,
+    "lon":151.19393
+  },
+  {
+    "postcode":2010,
+    "suburb":"DARLINGHURST",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.879825,
+    "lon":151.21956
+  },
+  {
+    "postcode":2010,
+    "suburb":"SURRY HILLS",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.888821,
+    "lon":151.213328
+  },
+  {
+    "postcode":2011,
+    "suburb":"ELIZABETH BAY",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.872829,
+    "lon":151.226593
+  },
+  {
+    "postcode":2011,
+    "suburb":"HMAS KUTTABUL",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.867206,
+    "lon":151.225205
+  },
+  {
+    "postcode":2011,
+    "suburb":"POTTS POINT",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.869026,
+    "lon":151.225603
+  },
+  {
+    "postcode":2011,
+    "suburb":"RUSHCUTTERS BAY",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.87624,
+    "lon":151.228614
+  },
+  {
+    "postcode":2011,
+    "suburb":"WOOLLOOMOOLOO",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.869283,
+    "lon":151.220412
+  },
+  {
+    "postcode":2015,
+    "suburb":"ALEXANDRIA",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.897571,
+    "lon":151.195567
+  },
+  {
+    "postcode":2015,
+    "suburb":"BEACONSFIELD",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.911613,
+    "lon":151.20189
+  },
+  {
+    "postcode":2015,
+    "suburb":"EVELEIGH",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.897075,
+    "lon":151.19113
+  },
+  {
+    "postcode":2016,
+    "suburb":"REDFERN",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.892778,
+    "lon":151.203901
+  },
+  {
+    "postcode":2017,
+    "suburb":"WATERLOO",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.9004,
+    "lon":151.206144
+  },
+  {
+    "postcode":2017,
+    "suburb":"ZETLAND",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.909938,
+    "lon":151.206234
+  },
+  {
+    "postcode":2018,
+    "suburb":"EASTLAKES",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.925133,
+    "lon":151.213199
+  },
+  {
+    "postcode":2018,
+    "suburb":"ROSEBERY",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.920412,
+    "lon":151.203107
+  },
+  {
+    "postcode":2019,
+    "suburb":"BANKSMEADOW",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.95742,
+    "lon":151.206715
+  },
+  {
+    "postcode":2019,
+    "suburb":"BOTANY",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.94477,
+    "lon":151.196528
+  },
+  {
+    "postcode":2020,
+    "suburb":"MASCOT",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.931189,
+    "lon":151.19431
+  },
+  {
+    "postcode":2020,
+    "suburb":"SYDNEY DOMESTIC AIRPORT",
+    "state":"NSW",
+    "dc":"SYD INTERNATIONAL AIRPORT LPO",
+    "lat":-33.931479,
+    "lon":151.184989
+  },
+  {
+    "postcode":2020,
+    "suburb":"SYDNEY INTERNATIONAL AIRPORT",
+    "state":"NSW",
+    "dc":"SYD INTERNATIONAL AIRPORT LPO",
+    "lat":-33.932035,
+    "lon":151.1687
+  },
+  {
+    "postcode":2021,
+    "suburb":"MOORE PARK",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.893632,
+    "lon":151.219357
+  },
+  {
+    "postcode":2021,
+    "suburb":"PADDINGTON",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.885032,
+    "lon":151.226475
+  },
+  {
+    "postcode":2022,
+    "suburb":"BONDI JUNCTION",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.892324,
+    "lon":151.24733
+  },
+  {
+    "postcode":2022,
+    "suburb":"BONDI JUNCTION PLAZA",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.891431,
+    "lon":151.250862
+  },
+  {
+    "postcode":2022,
+    "suburb":"QUEENS PARK",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.903188,
+    "lon":151.247205
+  },
+  {
+    "postcode":2023,
+    "suburb":"BELLEVUE HILL",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.887189,
+    "lon":151.258935
+  },
+  {
+    "postcode":2024,
+    "suburb":"BRONTE",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.902328,
+    "lon":151.263838
+  },
+  {
+    "postcode":2024,
+    "suburb":"WAVERLEY",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.897955,
+    "lon":151.252059
+  },
+  {
+    "postcode":2025,
+    "suburb":"WOOLLAHRA",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.885795,
+    "lon":151.24413
+  },
+  {
+    "postcode":2026,
+    "suburb":"BONDI",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.893739,
+    "lon":151.262502
+  },
+  {
+    "postcode":2026,
+    "suburb":"BONDI BEACH",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.890542,
+    "lon":151.274856
+  },
+  {
+    "postcode":2026,
+    "suburb":"NORTH BONDI",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.8857,
+    "lon":151.279788
+  },
+  {
+    "postcode":2026,
+    "suburb":"TAMARAMA",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.897439,
+    "lon":151.271839
+  },
+  {
+    "postcode":2027,
+    "suburb":"DARLING POINT",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.873808,
+    "lon":151.236683
+  },
+  {
+    "postcode":2027,
+    "suburb":"EDGECLIFF",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.878586,
+    "lon":151.235106
+  },
+  {
+    "postcode":2027,
+    "suburb":"HMAS RUSHCUTTERS",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.872495,
+    "lon":151.235668
+  },
+  {
+    "postcode":2027,
+    "suburb":"POINT PIPER",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.870083,
+    "lon":151.252329
+  },
+  {
+    "postcode":2028,
+    "suburb":"DOUBLE BAY",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.87906,
+    "lon":151.243095
+  },
+  {
+    "postcode":2029,
+    "suburb":"ROSE BAY",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.866555,
+    "lon":151.280456
+  },
+  {
+    "postcode":2030,
+    "suburb":"DOVER HEIGHTS",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.874405,
+    "lon":151.280416
+  },
+  {
+    "postcode":2030,
+    "suburb":"HMAS WATSON",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.837706,
+    "lon":151.281602
+  },
+  {
+    "postcode":2030,
+    "suburb":"ROSE BAY NORTH",
+    "state":"NSW",
+    "dc":"ROSE BAY NORTH LPO",
+    "lat":-33.866555,
+    "lon":151.280456
+  },
+  {
+    "postcode":2030,
+    "suburb":"VAUCLUSE",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.859047,
+    "lon":151.278434
+  },
+  {
+    "postcode":2030,
+    "suburb":"WATSONS BAY",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.844806,
+    "lon":151.282368
+  },
+  {
+    "postcode":2031,
+    "suburb":"CLOVELLY",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.912639,
+    "lon":151.262021
+  },
+  {
+    "postcode":2031,
+    "suburb":"CLOVELLY WEST",
+    "state":"NSW",
+    "dc":"CLOVELLY WEST LPO",
+    "lat":-33.911604,
+    "lon":151.254892
+  },
+  {
+    "postcode":2031,
+    "suburb":"RANDWICK",
+    "state":"NSW",
+    "dc":"WATERLOO DELIVERY FACILITY",
+    "lat":-33.913164,
+    "lon":151.241993
+  },
+  {
+    "postcode":2031,
+    "suburb":"ST PAULS",
+    "state":"NSW",
+    "dc":"ST PAULS LPO",
+    "lat":-33.920227,
+    "lon":151.242689
+  },
+  {
+    "postcode":2032,
+    "suburb":"DACEYVILLE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.928043,
+    "lon":151.22513
+  },
+  {
+    "postcode":2032,
+    "suburb":"KINGSFORD",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.924922,
+    "lon":151.227811
+  },
+  {
+    "postcode":2033,
+    "suburb":"KENSINGTON",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.912997,
+    "lon":151.219017
+  },
+  {
+    "postcode":2034,
+    "suburb":"COOGEE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.920491,
+    "lon":151.254401
+  },
+  {
+    "postcode":2034,
+    "suburb":"SOUTH COOGEE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.931293,
+    "lon":151.256089
+  },
+  {
+    "postcode":2035,
+    "suburb":"MAROUBRA",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.946123,
+    "lon":151.242818
+  },
+  {
+    "postcode":2035,
+    "suburb":"MAROUBRA SOUTH",
+    "state":"NSW",
+    "dc":"MAROUBRA SOUTH LPO",
+    "lat":-33.948856,
+    "lon":151.246592
+  },
+  {
+    "postcode":2035,
+    "suburb":"PAGEWOOD",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.940108,
+    "lon":151.228411
+  },
+  {
+    "postcode":2036,
+    "suburb":"CHIFLEY",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.976546,
+    "lon":151.240248
+  },
+  {
+    "postcode":2036,
+    "suburb":"EASTGARDENS",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.946043,
+    "lon":151.223301
+  },
+  {
+    "postcode":2036,
+    "suburb":"HILLSDALE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.952685,
+    "lon":151.231341
+  },
+  {
+    "postcode":2036,
+    "suburb":"LA PEROUSE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.989634,
+    "lon":151.231507
+  },
+  {
+    "postcode":2036,
+    "suburb":"LITTLE BAY",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.981177,
+    "lon":151.243206
+  },
+  {
+    "postcode":2036,
+    "suburb":"MALABAR",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.965376,
+    "lon":151.245969
+  },
+  {
+    "postcode":2036,
+    "suburb":"MATRAVILLE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.957549,
+    "lon":151.230846
+  },
+  {
+    "postcode":2036,
+    "suburb":"PHILLIP BAY",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.980556,
+    "lon":151.236692
+  },
+  {
+    "postcode":2036,
+    "suburb":"PORT BOTANY",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.966245,
+    "lon":151.225013
+  },
+  {
+    "postcode":2037,
+    "suburb":"FOREST LODGE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.881215,
+    "lon":151.181127
+  },
+  {
+    "postcode":2037,
+    "suburb":"GLEBE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.880815,
+    "lon":151.187791
+  },
+  {
+    "postcode":2038,
+    "suburb":"ANNANDALE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.881435,
+    "lon":151.170681
+  },
+  {
+    "postcode":2039,
+    "suburb":"ROZELLE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.863063,
+    "lon":151.170573
+  },
+  {
+    "postcode":2040,
+    "suburb":"LEICHHARDT",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.883793,
+    "lon":151.157057
+  },
+  {
+    "postcode":2040,
+    "suburb":"LILYFIELD",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.872991,
+    "lon":151.165788
+  },
+  {
+    "postcode":2041,
+    "suburb":"BALMAIN",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.856498,
+    "lon":151.178009
+  },
+  {
+    "postcode":2041,
+    "suburb":"BALMAIN EAST",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.857833,
+    "lon":151.190598
+  },
+  {
+    "postcode":2041,
+    "suburb":"BIRCHGROVE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.853386,
+    "lon":151.180609
+  },
+  {
+    "postcode":2042,
+    "suburb":"ENMORE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.899362,
+    "lon":151.171098
+  },
+  {
+    "postcode":2042,
+    "suburb":"NEWTOWN",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.896449,
+    "lon":151.180013
+  },
+  {
+    "postcode":2043,
+    "suburb":"ERSKINEVILLE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.902234,
+    "lon":151.186192
+  },
+  {
+    "postcode":2044,
+    "suburb":"ST PETERS",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.911062,
+    "lon":151.180126
+  },
+  {
+    "postcode":2044,
+    "suburb":"SYDENHAM",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.915222,
+    "lon":151.166104
+  },
+  {
+    "postcode":2044,
+    "suburb":"TEMPE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.924777,
+    "lon":151.160747
+  },
+  {
+    "postcode":2045,
+    "suburb":"HABERFIELD",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.880496,
+    "lon":151.138839
+  },
+  {
+    "postcode":2046,
+    "suburb":"ABBOTSFORD",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.852469,
+    "lon":151.129453
+  },
+  {
+    "postcode":2046,
+    "suburb":"CANADA BAY",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.863194,
+    "lon":151.116398
+  },
+  {
+    "postcode":2046,
+    "suburb":"CHISWICK",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.851437,
+    "lon":151.135954
+  },
+  {
+    "postcode":2046,
+    "suburb":"FIVE DOCK",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.866368,
+    "lon":151.130136
+  },
+  {
+    "postcode":2046,
+    "suburb":"RODD POINT",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.868208,
+    "lon":151.141652
+  },
+  {
+    "postcode":2046,
+    "suburb":"RUSSELL LEA",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.86072,
+    "lon":151.140711
+  },
+  {
+    "postcode":2046,
+    "suburb":"WAREEMBA",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.856828,
+    "lon":151.130728
+  },
+  {
+    "postcode":2047,
+    "suburb":"DRUMMOYNE",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.851056,
+    "lon":151.154542
+  },
+  {
+    "postcode":2048,
+    "suburb":"STANMORE",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.897351,
+    "lon":151.16535
+  },
+  {
+    "postcode":2049,
+    "suburb":"LEWISHAM",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.894902,
+    "lon":151.144413
+  },
+  {
+    "postcode":2049,
+    "suburb":"PETERSHAM",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.896242,
+    "lon":151.154136
+  },
+  {
+    "postcode":2049,
+    "suburb":"PETERSHAM NORTH",
+    "state":"NSW",
+    "dc":"PETERSHAM NORTH LPO",
+    "lat":-33.889283,
+    "lon":151.158575
+  },
+  {
+    "postcode":2050,
+    "suburb":"CAMPERDOWN",
+    "state":"NSW",
+    "dc":"ALEXANDRIA DF",
+    "lat":-33.88866,
+    "lon":151.177188
+  },
+  {
+    "postcode":2050,
+    "suburb":"MISSENDEN ROAD",
+    "state":"NSW",
+    "dc":"MISSENDEN ROAD LPO",
+    "lat":-33.888668,
+    "lon":151.181531
+  },
+  {
+    "postcode":2055,
+    "suburb":"NORTH SYDNEY",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.802837,
+    "lon":151.104935
+  },
+  {
+    "postcode":2060,
+    "suburb":"HMAS WATERHEN",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.840633,
+    "lon":151.19497
+  },
+  {
+    "postcode":2060,
+    "suburb":"LAVENDER BAY",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.84307,
+    "lon":151.208015
+  },
+  {
+    "postcode":2060,
+    "suburb":"MCMAHONS POINT",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.84464,
+    "lon":151.20425
+  },
+  {
+    "postcode":2060,
+    "suburb":"NORTH SYDNEY",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.838265,
+    "lon":151.206481
+  },
+  {
+    "postcode":2060,
+    "suburb":"NORTH SYDNEY SHOPPINGWORLD",
+    "state":"NSW",
+    "dc":"NORTH SYDNEY POST SHOP",
+    "lat":-33.837788,
+    "lon":151.208276
+  },
+  {
+    "postcode":2060,
+    "suburb":"WAVERTON",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.839969,
+    "lon":151.195808
+  },
+  {
+    "postcode":2061,
+    "suburb":"KIRRIBILLI",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.846275,
+    "lon":151.212705
+  },
+  {
+    "postcode":2061,
+    "suburb":"MILSONS POINT",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.847526,
+    "lon":151.211568
+  },
+  {
+    "postcode":2062,
+    "suburb":"CAMMERAY",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.821953,
+    "lon":151.21043
+  },
+  {
+    "postcode":2063,
+    "suburb":"NORTHBRIDGE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.815028,
+    "lon":151.222266
+  },
+  {
+    "postcode":2064,
+    "suburb":"ARTARMON",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.807664,
+    "lon":151.189662
+  },
+  {
+    "postcode":2065,
+    "suburb":"CROWS NEST",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.82609,
+    "lon":151.199192
+  },
+  {
+    "postcode":2065,
+    "suburb":"GREENWICH",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.831958,
+    "lon":151.186129
+  },
+  {
+    "postcode":2065,
+    "suburb":"NAREMBURN",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.817299,
+    "lon":151.20116
+  },
+  {
+    "postcode":2065,
+    "suburb":"ROYAL NORTH SHORE HOSPITAL",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.821588,
+    "lon":151.191396
+  },
+  {
+    "postcode":2065,
+    "suburb":"ST LEONARDS",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.823248,
+    "lon":151.195504
+  },
+  {
+    "postcode":2065,
+    "suburb":"WOLLSTONECRAFT",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.828158,
+    "lon":151.196621
+  },
+  {
+    "postcode":2066,
+    "suburb":"LANE COVE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.814599,
+    "lon":151.168722
+  },
+  {
+    "postcode":2066,
+    "suburb":"LANE COVE NORTH",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.807556,
+    "lon":151.170912
+  },
+  {
+    "postcode":2066,
+    "suburb":"LANE COVE WEST",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.806246,
+    "lon":151.153281
+  },
+  {
+    "postcode":2066,
+    "suburb":"LINLEY POINT",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.826777,
+    "lon":151.148251
+  },
+  {
+    "postcode":2066,
+    "suburb":"LONGUEVILLE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.833096,
+    "lon":151.165342
+  },
+  {
+    "postcode":2066,
+    "suburb":"NORTHWOOD",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.829732,
+    "lon":151.177751
+  },
+  {
+    "postcode":2066,
+    "suburb":"RIVERVIEW",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.825587,
+    "lon":151.159934
+  },
+  {
+    "postcode":2067,
+    "suburb":"CHATSWOOD",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.795617,
+    "lon":151.185329
+  },
+  {
+    "postcode":2067,
+    "suburb":"CHATSWOOD WEST",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.796332,
+    "lon":151.167142
+  },
+  {
+    "postcode":2068,
+    "suburb":"CASTLECRAG",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.802403,
+    "lon":151.212643
+  },
+  {
+    "postcode":2068,
+    "suburb":"MIDDLE COVE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.794087,
+    "lon":151.207975
+  },
+  {
+    "postcode":2068,
+    "suburb":"NORTH WILLOUGHBY",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.793089,
+    "lon":151.195787
+  },
+  {
+    "postcode":2068,
+    "suburb":"WILLOUGHBY",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.801483,
+    "lon":151.1986
+  },
+  {
+    "postcode":2068,
+    "suburb":"WILLOUGHBY EAST",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.802534,
+    "lon":151.203505
+  },
+  {
+    "postcode":2068,
+    "suburb":"WILLOUGHBY NORTH",
+    "state":"NSW",
+    "dc":"WILLOUGHBY NORTH LPO",
+    "lat":-33.793089,
+    "lon":151.195787
+  },
+  {
+    "postcode":2069,
+    "suburb":"CASTLE COVE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.784165,
+    "lon":151.199948
+  },
+  {
+    "postcode":2069,
+    "suburb":"ROSEVILLE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.784635,
+    "lon":151.177111
+  },
+  {
+    "postcode":2069,
+    "suburb":"ROSEVILLE CHASE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DF",
+    "lat":-33.778902,
+    "lon":151.195195
+  },
+  {
+    "postcode":2070,
+    "suburb":"EAST LINDFIELD",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.766415,
+    "lon":151.186095
+  },
+  {
+    "postcode":2070,
+    "suburb":"LINDFIELD",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.776441,
+    "lon":151.168736
+  },
+  {
+    "postcode":2070,
+    "suburb":"LINDFIELD WEST",
+    "state":"NSW",
+    "dc":"LINDFIELD WEST LPO",
+    "lat":-33.784382,
+    "lon":151.158141
+  },
+  {
+    "postcode":2071,
+    "suburb":"EAST KILLARA",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.753498,
+    "lon":151.170003
+  },
+  {
+    "postcode":2071,
+    "suburb":"KILLARA",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.766376,
+    "lon":151.162047
+  },
+  {
+    "postcode":2072,
+    "suburb":"GORDON",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.757349,
+    "lon":151.155678
+  },
+  {
+    "postcode":2073,
+    "suburb":"PYMBLE",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.74414,
+    "lon":151.141103
+  },
+  {
+    "postcode":2073,
+    "suburb":"WEST PYMBLE",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.760383,
+    "lon":151.126038
+  },
+  {
+    "postcode":2074,
+    "suburb":"NORTH TURRAMURRA",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.713419,
+    "lon":151.147146
+  },
+  {
+    "postcode":2074,
+    "suburb":"SOUTH TURRAMURRA",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.746027,
+    "lon":151.113441
+  },
+  {
+    "postcode":2074,
+    "suburb":"TURRAMURRA",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.733244,
+    "lon":151.129809
+  },
+  {
+    "postcode":2074,
+    "suburb":"WARRAWEE",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.722839,
+    "lon":151.126134
+  },
+  {
+    "postcode":2075,
+    "suburb":"ST IVES",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.730601,
+    "lon":151.158551
+  },
+  {
+    "postcode":2075,
+    "suburb":"ST IVES CHASE",
+    "state":"NSW",
+    "dc":"PYMBLE DC",
+    "lat":-33.707895,
+    "lon":151.163446
+  },
+  {
+    "postcode":2076,
+    "suburb":"NORMANHURST",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.720999,
+    "lon":151.097331
+  },
+  {
+    "postcode":2076,
+    "suburb":"NORTH WAHROONGA",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.702704,
+    "lon":151.123179
+  },
+  {
+    "postcode":2076,
+    "suburb":"WAHROONGA",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.716405,
+    "lon":151.118119
+  },
+  {
+    "postcode":2077,
+    "suburb":"ASQUITH",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.687484,
+    "lon":151.108685
+  },
+  {
+    "postcode":2077,
+    "suburb":"HORNSBY",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.704748,
+    "lon":151.098696
+  },
+  {
+    "postcode":2077,
+    "suburb":"HORNSBY HEIGHTS",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.670086,
+    "lon":151.095503
+  },
+  {
+    "postcode":2077,
+    "suburb":"WAITARA",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.709541,
+    "lon":151.104136
+  },
+  {
+    "postcode":2079,
+    "suburb":"MOUNT COLAH",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.664817,
+    "lon":151.117161
+  },
+  {
+    "postcode":2080,
+    "suburb":"MOUNT KURING-GAI",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.628729,
+    "lon":151.226792
+  },
+  {
+    "postcode":2081,
+    "suburb":"BEROWRA",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.623581,
+    "lon":151.150117
+  },
+  {
+    "postcode":2081,
+    "suburb":"COWAN",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.589491,
+    "lon":151.171015
+  },
+  {
+    "postcode":2082,
+    "suburb":"BEROWRA HEIGHTS",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.610968,
+    "lon":151.136829
+  },
+  {
+    "postcode":2082,
+    "suburb":"BEROWRA WATERS",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.601653,
+    "lon":151.11837
+  },
+  {
+    "postcode":2083,
+    "suburb":"BAR POINT",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.507463,
+    "lon":151.163329
+  },
+  {
+    "postcode":2083,
+    "suburb":"BROOKLYN",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.548006,
+    "lon":151.22519
+  },
+  {
+    "postcode":2083,
+    "suburb":"CHEERO POINT",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.514637,
+    "lon":151.195142
+  },
+  {
+    "postcode":2083,
+    "suburb":"COGRA BAY",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.519596,
+    "lon":151.223002
+  },
+  {
+    "postcode":2083,
+    "suburb":"DANGAR ISLAND",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.539357,
+    "lon":151.241762
+  },
+  {
+    "postcode":2083,
+    "suburb":"MILSONS PASSAGE",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.518967,
+    "lon":151.176541
+  },
+  {
+    "postcode":2083,
+    "suburb":"MOONEY MOONEY",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.490356,
+    "lon":151.186179
+  },
+  {
+    "postcode":2084,
+    "suburb":"COTTAGE POINT",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.619578,
+    "lon":151.203831
+  },
+  {
+    "postcode":2084,
+    "suburb":"DUFFYS FOREST",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.676775,
+    "lon":151.199879
+  },
+  {
+    "postcode":2084,
+    "suburb":"TERREY HILLS",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.683644,
+    "lon":151.22847
+  },
+  {
+    "postcode":2085,
+    "suburb":"BELROSE",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.739288,
+    "lon":151.211439
+  },
+  {
+    "postcode":2085,
+    "suburb":"BELROSE WEST",
+    "state":"NSW",
+    "dc":"BELROSE WEST LPO",
+    "lat":-33.761674,
+    "lon":151.278773
+  },
+  {
+    "postcode":2085,
+    "suburb":"DAVIDSON",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.738731,
+    "lon":151.194197
+  },
+  {
+    "postcode":2086,
+    "suburb":"FRENCHS FOREST",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.750964,
+    "lon":151.226036
+  },
+  {
+    "postcode":2086,
+    "suburb":"FRENCHS FOREST EAST",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.751488,
+    "lon":151.245461
+  },
+  {
+    "postcode":2087,
+    "suburb":"FORESTVILLE",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.762011,
+    "lon":151.21406
+  },
+  {
+    "postcode":2087,
+    "suburb":"KILLARNEY HEIGHTS",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.773728,
+    "lon":151.216125
+  },
+  {
+    "postcode":2088,
+    "suburb":"MOSMAN",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.829077,
+    "lon":151.24409
+  },
+  {
+    "postcode":2088,
+    "suburb":"SPIT JUNCTION",
+    "state":"NSW",
+    "dc":"SPIT JUNCTION POST SHOP",
+    "lat":-33.822964,
+    "lon":151.242292
+  },
+  {
+    "postcode":2089,
+    "suburb":"NEUTRAL BAY",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.83112,
+    "lon":151.221232
+  },
+  {
+    "postcode":2089,
+    "suburb":"NEUTRAL BAY JUNCTION",
+    "state":"NSW",
+    "dc":"NEUTRAL BAY JUNCTION POST SHOP",
+    "lat":-33.831529,
+    "lon":151.222401
+  },
+  {
+    "postcode":2090,
+    "suburb":"CREMORNE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.828131,
+    "lon":151.230233
+  },
+  {
+    "postcode":2090,
+    "suburb":"CREMORNE JUNCTION",
+    "state":"NSW",
+    "dc":"CREMORNE JUNCTION POST SHOP",
+    "lat":-33.843075,
+    "lon":151.228923
+  },
+  {
+    "postcode":2090,
+    "suburb":"CREMORNE POINT",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.84447,
+    "lon":151.228231
+  },
+  {
+    "postcode":2092,
+    "suburb":"SEAFORTH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.797106,
+    "lon":151.251146
+  },
+  {
+    "postcode":2093,
+    "suburb":"BALGOWLAH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.794121,
+    "lon":151.26268
+  },
+  {
+    "postcode":2093,
+    "suburb":"BALGOWLAH HEIGHTS",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.800553,
+    "lon":151.257401
+  },
+  {
+    "postcode":2093,
+    "suburb":"CLONTARF",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.808238,
+    "lon":151.255095
+  },
+  {
+    "postcode":2093,
+    "suburb":"MANLY VALE",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.784036,
+    "lon":151.267315
+  },
+  {
+    "postcode":2093,
+    "suburb":"NORTH BALGOWLAH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.787074,
+    "lon":151.251721
+  },
+  {
+    "postcode":2094,
+    "suburb":"FAIRLIGHT",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.794163,
+    "lon":151.273978
+  },
+  {
+    "postcode":2095,
+    "suburb":"MANLY",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.797144,
+    "lon":151.28804
+  },
+  {
+    "postcode":2095,
+    "suburb":"MANLY EAST",
+    "state":"NSW",
+    "dc":"MANLY EAST LPO",
+    "lat":-33.801822,
+    "lon":151.288876
+  },
+  {
+    "postcode":2096,
+    "suburb":"CURL CURL",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.768937,
+    "lon":151.294035
+  },
+  {
+    "postcode":2096,
+    "suburb":"HARBORD",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.778663,
+    "lon":151.285772
+  },
+  {
+    "postcode":2096,
+    "suburb":"QUEENSCLIFF",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.784595,
+    "lon":151.287817
+  },
+  {
+    "postcode":2097,
+    "suburb":"COLLAROY",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.740969,
+    "lon":151.303133
+  },
+  {
+    "postcode":2097,
+    "suburb":"COLLAROY BEACH",
+    "state":"NSW",
+    "dc":"COLLAROY BEACH LPO",
+    "lat":-33.732122,
+    "lon":151.301232
+  },
+  {
+    "postcode":2097,
+    "suburb":"COLLAROY PLATEAU WEST",
+    "state":"NSW",
+    "dc":"COLLAROY PLATEAU WEST LPO",
+    "lat":-33.728047,
+    "lon":151.286514
+  },
+  {
+    "postcode":2097,
+    "suburb":"WHEELER HEIGHTS",
+    "state":"NSW",
+    "dc":"WHEELER HEIGHTS LPO",
+    "lat":-33.732476,
+    "lon":151.277439
+  },
+  {
+    "postcode":2099,
+    "suburb":"CROMER",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.740353,
+    "lon":151.278523
+  },
+  {
+    "postcode":2099,
+    "suburb":"DEE WHY",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.753451,
+    "lon":151.28554
+  },
+  {
+    "postcode":2099,
+    "suburb":"NARRAWEENA",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.749912,
+    "lon":151.274687
+  },
+  {
+    "postcode":2099,
+    "suburb":"NORTH CURL CURL",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.761652,
+    "lon":151.295691
+  },
+  {
+    "postcode":2100,
+    "suburb":"ALLAMBIE HEIGHTS",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.765076,
+    "lon":151.248864
+  },
+  {
+    "postcode":2100,
+    "suburb":"BEACON HILL",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.752406,
+    "lon":151.261272
+  },
+  {
+    "postcode":2100,
+    "suburb":"BROOKVALE",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.766629,
+    "lon":151.273824
+  },
+  {
+    "postcode":2100,
+    "suburb":"NORTH MANLY",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.775702,
+    "lon":151.269339
+  },
+  {
+    "postcode":2100,
+    "suburb":"OXFORD FALLS",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.730197,
+    "lon":151.248218
+  },
+  {
+    "postcode":2100,
+    "suburb":"WARRINGAH MALL",
+    "state":"NSW",
+    "dc":"WARRINGAH MALL POST SHOP",
+    "lat":-33.767737,
+    "lon":151.266062
+  },
+  {
+    "postcode":2101,
+    "suburb":"ELANORA HEIGHTS",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.695015,
+    "lon":151.280156
+  },
+  {
+    "postcode":2101,
+    "suburb":"INGLESIDE",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.683176,
+    "lon":151.262322
+  },
+  {
+    "postcode":2101,
+    "suburb":"NARRABEEN",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.723127,
+    "lon":151.287366
+  },
+  {
+    "postcode":2101,
+    "suburb":"NORTH NARRABEEN",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.702661,
+    "lon":151.293622
+  },
+  {
+    "postcode":2102,
+    "suburb":"WARRIEWOOD",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.686265,
+    "lon":151.29908
+  },
+  {
+    "postcode":2103,
+    "suburb":"MONA VALE",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.67707,
+    "lon":151.300316
+  },
+  {
+    "postcode":2104,
+    "suburb":"BAYVIEW",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.66445,
+    "lon":151.298945
+  },
+  {
+    "postcode":2105,
+    "suburb":"CHURCH POINT",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.644873,
+    "lon":151.284352
+  },
+  {
+    "postcode":2105,
+    "suburb":"ELVINA BAY",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.642011,
+    "lon":151.276109
+  },
+  {
+    "postcode":2105,
+    "suburb":"LOVETT BAY",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.637405,
+    "lon":151.278429
+  },
+  {
+    "postcode":2105,
+    "suburb":"SCOTLAND ISLAND",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.641752,
+    "lon":151.290116
+  },
+  {
+    "postcode":2106,
+    "suburb":"NEWPORT",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.659896,
+    "lon":151.309312
+  },
+  {
+    "postcode":2106,
+    "suburb":"NEWPORT BEACH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.652485,
+    "lon":151.322776
+  },
+  {
+    "postcode":2107,
+    "suburb":"AVALON BEACH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.636325,
+    "lon":151.330596
+  },
+  {
+    "postcode":2107,
+    "suburb":"BILGOLA",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.645562,
+    "lon":151.323857
+  },
+  {
+    "postcode":2107,
+    "suburb":"CAREEL BAY",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.623135,
+    "lon":151.327046
+  },
+  {
+    "postcode":2107,
+    "suburb":"CLAREVILLE",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.634905,
+    "lon":151.313321
+  },
+  {
+    "postcode":2107,
+    "suburb":"PARADISE BEACH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.624257,
+    "lon":151.31871
+  },
+  {
+    "postcode":2107,
+    "suburb":"TAYLORS POINT",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.637041,
+    "lon":151.305538
+  },
+  {
+    "postcode":2107,
+    "suburb":"WHALE BEACH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.614274,
+    "lon":151.330438
+  },
+  {
+    "postcode":2108,
+    "suburb":"COASTERS RETREAT",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.6048,
+    "lon":151.29883
+  },
+  {
+    "postcode":2108,
+    "suburb":"CURRAWONG BEACH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.597338,
+    "lon":151.298367
+  },
+  {
+    "postcode":2108,
+    "suburb":"GREAT MACKEREL BEACH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.591729,
+    "lon":151.300451
+  },
+  {
+    "postcode":2108,
+    "suburb":"MORNING BAY",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.623044,
+    "lon":151.281623
+  },
+  {
+    "postcode":2108,
+    "suburb":"PALM BEACH",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.604282,
+    "lon":151.321419
+  },
+  {
+    "postcode":2108,
+    "suburb":"THE BASIN",
+    "state":"NSW",
+    "dc":"FRENCHS FOREST DEL FAC-DEL",
+    "lat":-33.602384,
+    "lon":151.293682
+  },
+  {
+    "postcode":2110,
+    "suburb":"HUNTERS HILL",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.83484,
+    "lon":151.154196
+  },
+  {
+    "postcode":2110,
+    "suburb":"WOOLWICH",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.838393,
+    "lon":151.172535
+  },
+  {
+    "postcode":2111,
+    "suburb":"BORONIA PARK",
+    "state":"NSW",
+    "dc":"BORONIA PARK LPO",
+    "lat":-33.820941,
+    "lon":151.140067
+  },
+  {
+    "postcode":2111,
+    "suburb":"GLADESVILLE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.832894,
+    "lon":151.126964
+  },
+  {
+    "postcode":2111,
+    "suburb":"HENLEY",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.842216,
+    "lon":151.135943
+  },
+  {
+    "postcode":2111,
+    "suburb":"HUNTLEYS COVE",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.839798,
+    "lon":151.144587
+  },
+  {
+    "postcode":2111,
+    "suburb":"HUNTLEYS POINT",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.840088,
+    "lon":151.145968
+  },
+  {
+    "postcode":2111,
+    "suburb":"MONASH PARK",
+    "state":"NSW",
+    "dc":"MONASH PARK LPO",
+    "lat":-33.82248,
+    "lon":151.125215
+  },
+  {
+    "postcode":2111,
+    "suburb":"TENNYSON POINT",
+    "state":"NSW",
+    "dc":"ST LEONARDS DEL FAC CPM",
+    "lat":-33.831448,
+    "lon":151.117286
+  },
+  {
+    "postcode":2112,
+    "suburb":"DENISTONE EAST",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.797177,
+    "lon":151.097546
+  },
+  {
+    "postcode":2112,
+    "suburb":"PUTNEY",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.824735,
+    "lon":151.112549
+  },
+  {
+    "postcode":2112,
+    "suburb":"RYDE",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.812953,
+    "lon":151.104942
+  },
+  {
+    "postcode":2113,
+    "suburb":"BLENHEIM ROAD",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.798595,
+    "lon":151.133903
+  },
+  {
+    "postcode":2113,
+    "suburb":"EAST RYDE",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.813769,
+    "lon":151.140289
+  },
+  {
+    "postcode":2113,
+    "suburb":"MACQUARIE CENTRE",
+    "state":"NSW",
+    "dc":"MACQUARIE CENTRE POST SHOP",
+    "lat":-33.777139,
+    "lon":151.120702
+  },
+  {
+    "postcode":2113,
+    "suburb":"MACQUARIE PARK",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.779795,
+    "lon":151.134041
+  },
+  {
+    "postcode":2113,
+    "suburb":"NORTH RYDE",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.79677,
+    "lon":151.124355
+  },
+  {
+    "postcode":2114,
+    "suburb":"DENISTONE",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.799441,
+    "lon":151.07959
+  },
+  {
+    "postcode":2114,
+    "suburb":"DENISTONE WEST",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.802382,
+    "lon":151.066085
+  },
+  {
+    "postcode":2114,
+    "suburb":"MEADOWBANK",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.815912,
+    "lon":151.090715
+  },
+  {
+    "postcode":2114,
+    "suburb":"MELROSE PARK",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.816575,
+    "lon":151.076089
+  },
+  {
+    "postcode":2114,
+    "suburb":"WEST RYDE",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.807712,
+    "lon":151.088724
+  },
+  {
+    "postcode":2115,
+    "suburb":"ERMINGTON",
+    "state":"NSW",
+    "dc":"RYDALMERE DC",
+    "lat":-33.814144,
+    "lon":151.054495
+  },
+  {
+    "postcode":2116,
+    "suburb":"RYDALMERE",
+    "state":"NSW",
+    "dc":"RYDALMERE DC",
+    "lat":-33.811244,
+    "lon":151.034464
+  },
+  {
+    "postcode":2117,
+    "suburb":"DUNDAS",
+    "state":"NSW",
+    "dc":"PARRAMATTA DC",
+    "lat":-33.799405,
+    "lon":151.044189
+  },
+  {
+    "postcode":2117,
+    "suburb":"DUNDAS VALLEY",
+    "state":"NSW",
+    "dc":"PARRAMATTA DC",
+    "lat":-33.78724,
+    "lon":151.061185
+  },
+  {
+    "postcode":2117,
+    "suburb":"OATLANDS",
+    "state":"NSW",
+    "dc":"PARRAMATTA DC",
+    "lat":-33.796298,
+    "lon":151.026314
+  },
+  {
+    "postcode":2117,
+    "suburb":"TELOPEA",
+    "state":"NSW",
+    "dc":"PARRAMATTA DC",
+    "lat":-33.795986,
+    "lon":151.045106
+  },
+  {
+    "postcode":2118,
+    "suburb":"CARLINGFORD",
+    "state":"NSW",
+    "dc":"RYDALMERE DC",
+    "lat":-33.782959,
+    "lon":151.047707
+  },
+  {
+    "postcode":2118,
+    "suburb":"CARLINGFORD COURT",
+    "state":"NSW",
+    "dc":"CARLINGFORD FRANCHISE",
+    "lat":-33.776166,
+    "lon":151.0524
+  },
+  {
+    "postcode":2118,
+    "suburb":"CARLINGFORD NORTH",
+    "state":"NSW",
+    "dc":"CARLINGFORD NORTH LPO",
+    "lat":-33.763237,
+    "lon":151.047719
+  },
+  {
+    "postcode":2118,
+    "suburb":"KINGSDENE",
+    "state":"NSW",
+    "dc":"KINGSDENE LPO",
+    "lat":-33.784272,
+    "lon":151.02806
+  },
+  {
+    "postcode":2119,
+    "suburb":"BEECROFT",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.749498,
+    "lon":151.064533
+  },
+  {
+    "postcode":2119,
+    "suburb":"CHELTENHAM",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.76169,
+    "lon":151.079364
+  },
+  {
+    "postcode":2120,
+    "suburb":"PENNANT HILLS",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.738681,
+    "lon":151.071433
+  },
+  {
+    "postcode":2120,
+    "suburb":"THORNLEIGH",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.730816,
+    "lon":151.081226
+  },
+  {
+    "postcode":2120,
+    "suburb":"WESTLEIGH",
+    "state":"NSW",
+    "dc":"THORNLEIGH DC",
+    "lat":-33.711956,
+    "lon":151.072836
+  },
+  {
+    "postcode":2121,
+    "suburb":"EPPING",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.772549,
+    "lon":151.082365
+  },
+  {
+    "postcode":2121,
+    "suburb":"NORTH EPPING",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.759777,
+    "lon":151.087742
+  },
+  {
+    "postcode":2122,
+    "suburb":"EASTWOOD",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.789986,
+    "lon":151.080914
+  },
+  {
+    "postcode":2122,
+    "suburb":"MARSFIELD",
+    "state":"NSW",
+    "dc":"NORTH RYDE DC",
+    "lat":-33.783971,
+    "lon":151.094241
+  },
+  {
+    "postcode":2125,
+    "suburb":"WEST PENNANT HILLS",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.753676,
+    "lon":151.039113
+  },
+  {
+    "postcode":2126,
+    "suburb":"CHERRYBROOK",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.722019,
+    "lon":151.041806
+  },
+  {
+    "postcode":2127,
+    "suburb":"HOMEBUSH BAY",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.85283,
+    "lon":151.076186
+  },
+  {
+    "postcode":2127,
+    "suburb":"NEWINGTON",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.839276,
+    "lon":151.054828
+  },
+  {
+    "postcode":2128,
+    "suburb":"SILVERWATER",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.835928,
+    "lon":151.047591
+  },
+  {
+    "postcode":2130,
+    "suburb":"SUMMER HILL",
+    "state":"NSW",
+    "dc":"CROYDON PARK DC",
+    "lat":-33.891712,
+    "lon":151.137258
+  },
+  {
+    "postcode":2131,
+    "suburb":"ASHFIELD",
+    "state":"NSW",
+    "dc":"CROYDON PARK DC",
+    "lat":-33.889498,
+    "lon":151.127444
+  },
+  {
+    "postcode":2132,
+    "suburb":"CROYDON",
+    "state":"NSW",
+    "dc":"CROYDON PARK DC",
+    "lat":-33.883163,
+    "lon":151.114771
+  },
+  {
+    "postcode":2133,
+    "suburb":"CROYDON PARK",
+    "state":"NSW",
+    "dc":"CROYDON PARK DC",
+    "lat":-33.895299,
+    "lon":151.108581
+  },
+  {
+    "postcode":2133,
+    "suburb":"ENFIELD SOUTH",
+    "state":"NSW",
+    "dc":"ENFIELD SOUTH LPO",
+    "lat":-33.895575,
+    "lon":151.093456
+  },
+  {
+    "postcode":2134,
+    "suburb":"BURWOOD",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.877423,
+    "lon":151.103682
+  },
+  {
+    "postcode":2134,
+    "suburb":"BURWOOD NORTH",
+    "state":"NSW",
+    "dc":"BURWOOD NORTH LPO",
+    "lat":-33.876154,
+    "lon":151.103933
+  },
+  {
+    "postcode":2135,
+    "suburb":"STRATHFIELD",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.873913,
+    "lon":151.093993
+  },
+  {
+    "postcode":2136,
+    "suburb":"BURWOOD HEIGHTS",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.888328,
+    "lon":151.103412
+  },
+  {
+    "postcode":2136,
+    "suburb":"ENFIELD",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.886854,
+    "lon":151.092425
+  },
+  {
+    "postcode":2136,
+    "suburb":"STRATHFIELD SOUTH",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.891711,
+    "lon":151.082992
+  },
+  {
+    "postcode":2137,
+    "suburb":"BREAKFAST POINT",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.841583,
+    "lon":151.107502
+  },
+  {
+    "postcode":2137,
+    "suburb":"CABARITA",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.849081,
+    "lon":151.113765
+  },
+  {
+    "postcode":2137,
+    "suburb":"CONCORD",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.857857,
+    "lon":151.103502
+  },
+  {
+    "postcode":2137,
+    "suburb":"MORTLAKE",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.843435,
+    "lon":151.10698
+  },
+  {
+    "postcode":2137,
+    "suburb":"NORTH STRATHFIELD",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.85746,
+    "lon":151.091954
+  },
+  {
+    "postcode":2138,
+    "suburb":"CONCORD WEST",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.848041,
+    "lon":151.087326
+  },
+  {
+    "postcode":2138,
+    "suburb":"LIBERTY GROVE",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.841665,
+    "lon":151.083609
+  },
+  {
+    "postcode":2138,
+    "suburb":"RHODES",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.830764,
+    "lon":151.088105
+  },
+  {
+    "postcode":2140,
+    "suburb":"HOMEBUSH",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.859654,
+    "lon":151.081847
+  },
+  {
+    "postcode":2140,
+    "suburb":"HOMEBUSH SOUTH",
+    "state":"NSW",
+    "dc":"HOMEBUSH SOUTH LPO",
+    "lat":-33.867767,
+    "lon":151.08447
+  },
+  {
+    "postcode":2140,
+    "suburb":"HOMEBUSH WEST",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.866788,
+    "lon":151.069369
+  },
+  {
+    "postcode":2141,
+    "suburb":"BERALA",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.871904,
+    "lon":151.031033
+  },
+  {
+    "postcode":2141,
+    "suburb":"LIDCOMBE",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.865218,
+    "lon":151.043519
+  },
+  {
+    "postcode":2141,
+    "suburb":"LIDCOMBE NORTH",
+    "state":"NSW",
+    "dc":"LIDCOMBE NORTH LPO",
+    "lat":-33.854197,
+    "lon":151.047419
+  },
+  {
+    "postcode":2141,
+    "suburb":"ROOKWOOD",
+    "state":"NSW",
+    "dc":"LIDCOMBE DELIVERY CENTRE",
+    "lat":-33.866398,
+    "lon":151.058147
+  },
+  {
+    "postcode":2142,
+    "suburb":"BLAXCELL",
+    "state":"NSW",
+    "dc":"BLAXCELL LPO",
+    "lat":-33.853251,
+    "lon":151.008129
+  },
+  {
+    "postcode":2142,
+    "suburb":"CAMELLIA",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.816872,
+    "lon":151.022191
+  },
+  {
+    "postcode":2142,
+    "suburb":"CLYDE",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.832322,
+    "lon":151.019414
+  },
+  {
+    "postcode":2142,
+    "suburb":"GRANVILLE",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.835887,
+    "lon":151.01064
+  },
+  {
+    "postcode":2142,
+    "suburb":"HOLROYD",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.829836,
+    "lon":150.993334
+  },
+  {
+    "postcode":2142,
+    "suburb":"ROSEHILL",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.819992,
+    "lon":151.024558
+  },
+  {
+    "postcode":2142,
+    "suburb":"SOUTH GRANVILLE",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.863022,
+    "lon":151.006224
+  },
+  {
+    "postcode":2143,
+    "suburb":"BIRRONG",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.89022,
+    "lon":151.022398
+  },
+  {
+    "postcode":2143,
+    "suburb":"POTTS HILL",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.898247,
+    "lon":151.031087
+  },
+  {
+    "postcode":2143,
+    "suburb":"REGENTS PARK",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.883928,
+    "lon":151.023796
+  },
+  {
+    "postcode":2144,
+    "suburb":"AUBURN",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.849322,
+    "lon":151.033421
+  },
+  {
+    "postcode":2145,
+    "suburb":"GIRRAWEEN",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.799843,
+    "lon":150.947276
+  },
+  {
+    "postcode":2145,
+    "suburb":"GREYSTANES",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.829667,
+    "lon":150.951452
+  },
+  {
+    "postcode":2145,
+    "suburb":"MAYS HILL",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.82066,
+    "lon":150.990511
+  },
+  {
+    "postcode":2145,
+    "suburb":"PEMULWUY",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.821944,
+    "lon":150.923752
+  },
+  {
+    "postcode":2145,
+    "suburb":"PENDLE HILL",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.801912,
+    "lon":150.955614
+  },
+  {
+    "postcode":2145,
+    "suburb":"SOUTH WENTWORTHVILLE",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.823892,
+    "lon":150.969376
+  },
+  {
+    "postcode":2145,
+    "suburb":"WENTWORTHVILLE",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.805922,
+    "lon":150.970183
+  },
+  {
+    "postcode":2145,
+    "suburb":"WESTMEAD",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.805332,
+    "lon":150.986608
+  },
+  {
+    "postcode":2146,
+    "suburb":"OLD TOONGABBIE",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.792713,
+    "lon":150.974108
+  },
+  {
+    "postcode":2146,
+    "suburb":"TOONGABBIE",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.788942,
+    "lon":150.950644
+  },
+  {
+    "postcode":2146,
+    "suburb":"TOONGABBIE EAST",
+    "state":"NSW",
+    "dc":"TOONGABBIE EAST LPO",
+    "lat":-33.788155,
+    "lon":150.960639
+  },
+  {
+    "postcode":2147,
+    "suburb":"KINGS LANGLEY",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.742079,
+    "lon":150.922711
+  },
+  {
+    "postcode":2147,
+    "suburb":"LALOR PARK",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.761339,
+    "lon":150.930337
+  },
+  {
+    "postcode":2147,
+    "suburb":"SEVEN HILLS",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.775477,
+    "lon":150.934257
+  },
+  {
+    "postcode":2147,
+    "suburb":"SEVEN HILLS WEST",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.771047,
+    "lon":150.923871
+  },
+  {
+    "postcode":2148,
+    "suburb":"ARNDELL PARK",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.787266,
+    "lon":150.871959
+  },
+  {
+    "postcode":2148,
+    "suburb":"BLACKTOWN",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.770184,
+    "lon":150.908501
+  },
+  {
+    "postcode":2148,
+    "suburb":"BLACKTOWN WESTPOINT",
+    "state":"NSW",
+    "dc":"BLACKTOWN WESTPOINT POST SHOP",
+    "lat":-33.770162,
+    "lon":150.905148
+  },
+  {
+    "postcode":2148,
+    "suburb":"HUNTINGWOOD",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.797537,
+    "lon":150.879863
+  },
+  {
+    "postcode":2148,
+    "suburb":"KINGS PARK",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.745736,
+    "lon":150.904598
+  },
+  {
+    "postcode":2148,
+    "suburb":"MARAYONG",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.746168,
+    "lon":150.898338
+  },
+  {
+    "postcode":2148,
+    "suburb":"PROSPECT",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.801553,
+    "lon":150.916198
+  },
+  {
+    "postcode":2150,
+    "suburb":"HARRIS PARK",
+    "state":"NSW",
+    "dc":"PARRAMATTA DC",
+    "lat":-33.822427,
+    "lon":151.008961
+  },
+  {
+    "postcode":2150,
+    "suburb":"PARRAMATTA",
+    "state":"NSW",
+    "dc":"PARRAMATTA DC",
+    "lat":-33.816957,
+    "lon":151.003451
+  },
+  {
+    "postcode":2150,
+    "suburb":"PARRAMATTA WESTFIELD",
+    "state":"NSW",
+    "dc":"PARRAMATTA WESTFIELD POST SHOP",
+    "lat":-33.817717,
+    "lon":151.001359
+  },
+  {
+    "postcode":2151,
+    "suburb":"NORTH PARRAMATTA",
+    "state":"NSW",
+    "dc":"PARRAMATTA DC",
+    "lat":-33.798043,
+    "lon":151.010707
+  },
+  {
+    "postcode":2151,
+    "suburb":"NORTH ROCKS",
+    "state":"NSW",
+    "dc":"PARRAMATTA DC",
+    "lat":-33.768119,
+    "lon":151.02854
+  },
+  {
+    "postcode":2152,
+    "suburb":"NORTHMEAD",
+    "state":"NSW",
+    "dc":"PARRAMATTA DC",
+    "lat":-33.783849,
+    "lon":150.994336
+  },
+  {
+    "postcode":2153,
+    "suburb":"BAULKHAM HILLS",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.758601,
+    "lon":150.992887
+  },
+  {
+    "postcode":2153,
+    "suburb":"BELLA VISTA",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.737345,
+    "lon":150.95501
+  },
+  {
+    "postcode":2153,
+    "suburb":"WINSTON HILLS",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.776054,
+    "lon":150.987795
+  },
+  {
+    "postcode":2154,
+    "suburb":"CASTLE HILL",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.732307,
+    "lon":151.005616
+  },
+  {
+    "postcode":2155,
+    "suburb":"BEAUMONT HILLS",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.703416,
+    "lon":150.946875
+  },
+  {
+    "postcode":2155,
+    "suburb":"KELLYVILLE",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.712415,
+    "lon":150.958009
+  },
+  {
+    "postcode":2155,
+    "suburb":"KELLYVILLE RIDGE",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.700104,
+    "lon":150.92865
+  },
+  {
+    "postcode":2155,
+    "suburb":"ROUSE HILL",
+    "state":"NSW",
+    "dc":"SEVEN HILLS DF",
+    "lat":-33.682068,
+    "lon":150.915397
+  },
+  {
+    "postcode":2156,
+    "suburb":"ANNANGROVE",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.657772,
+    "lon":150.943505
+  },
+  {
+    "postcode":2156,
+    "suburb":"GLENHAVEN",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.703218,
+    "lon":151.006899
+  },
+  {
+    "postcode":2156,
+    "suburb":"KENTHURST",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.661023,
+    "lon":151.005034
+  },
+  {
+    "postcode":2157,
+    "suburb":"CANOELANDS",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.508714,
+    "lon":151.061148
+  },
+  {
+    "postcode":2157,
+    "suburb":"FOREST GLEN",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.549519,
+    "lon":151.012846
+  },
+  {
+    "postcode":2157,
+    "suburb":"GLENORIE",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.620011,
+    "lon":151.023035
+  },
+  {
+    "postcode":2158,
+    "suburb":"DURAL",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.681875,
+    "lon":151.028435
+  },
+  {
+    "postcode":2158,
+    "suburb":"MIDDLE DURAL",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.648471,
+    "lon":151.021276
+  },
+  {
+    "postcode":2158,
+    "suburb":"ROUND CORNER",
+    "state":"NSW",
+    "dc":"ROUND CORNER LPO",
+    "lat":-33.695103,
+    "lon":151.017906
+  },
+  {
+    "postcode":2159,
+    "suburb":"ARCADIA",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.623101,
+    "lon":151.052726
+  },
+  {
+    "postcode":2159,
+    "suburb":"BERRILEE",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.61497,
+    "lon":151.095573
+  },
+  {
+    "postcode":2159,
+    "suburb":"FIDDLETOWN",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.602321,
+    "lon":151.055702
+  },
+  {
+    "postcode":2159,
+    "suburb":"GALSTON",
+    "state":"NSW",
+    "dc":"DURAL DC",
+    "lat":-33.652661,
+    "lon":151.043059
+  },
+  {
+    "postcode":2160,
+    "suburb":"MERRYLANDS",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.836381,
+    "lon":150.989219
+  },
+  {
+    "postcode":2160,
+    "suburb":"MERRYLANDS WEST",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.832864,
+    "lon":150.972036
+  },
+  {
+    "postcode":2161,
+    "suburb":"GUILDFORD",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.853984,
+    "lon":150.985958
+  },
+  {
+    "postcode":2161,
+    "suburb":"GUILDFORD WEST",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.851099,
+    "lon":150.972299
+  },
+  {
+    "postcode":2161,
+    "suburb":"OLD GUILDFORD",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.867084,
+    "lon":150.988073
+  },
+  {
+    "postcode":2161,
+    "suburb":"YENNORA",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.860889,
+    "lon":150.969356
+  },
+  {
+    "postcode":2162,
+    "suburb":"CHESTER HILL",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.883157,
+    "lon":151.001185
+  },
+  {
+    "postcode":2162,
+    "suburb":"SEFTON",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.885501,
+    "lon":151.011469
+  },
+  {
+    "postcode":2163,
+    "suburb":"CARRAMAR",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.884558,
+    "lon":150.961884
+  },
+  {
+    "postcode":2163,
+    "suburb":"LANSDOWNE",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.893687,
+    "lon":150.971005
+  },
+  {
+    "postcode":2163,
+    "suburb":"VILLAWOOD",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.883679,
+    "lon":150.976468
+  },
+  {
+    "postcode":2164,
+    "suburb":"SMITHFIELD",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.853546,
+    "lon":150.940431
+  },
+  {
+    "postcode":2164,
+    "suburb":"SMITHFIELD WEST",
+    "state":"NSW",
+    "dc":"SMITHFIELD WEST LPO",
+    "lat":-33.850834,
+    "lon":150.922215
+  },
+  {
+    "postcode":2164,
+    "suburb":"WETHERILL PARK",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.847512,
+    "lon":150.913204
+  },
+  {
+    "postcode":2164,
+    "suburb":"WOODPARK",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.84063,
+    "lon":150.961859
+  },
+  {
+    "postcode":2165,
+    "suburb":"FAIRFIELD",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.868529,
+    "lon":150.955512
+  },
+  {
+    "postcode":2165,
+    "suburb":"FAIRFIELD EAST",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.869449,
+    "lon":150.977528
+  },
+  {
+    "postcode":2165,
+    "suburb":"FAIRFIELD HEIGHTS",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.864603,
+    "lon":150.938451
+  },
+  {
+    "postcode":2165,
+    "suburb":"FAIRFIELD WEST",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.868955,
+    "lon":150.922057
+  },
+  {
+    "postcode":2166,
+    "suburb":"CABRAMATTA",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.89507,
+    "lon":150.935889
+  },
+  {
+    "postcode":2166,
+    "suburb":"CABRAMATTA WEST",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.899136,
+    "lon":150.917514
+  },
+  {
+    "postcode":2166,
+    "suburb":"CANLEY HEIGHTS",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.883633,
+    "lon":150.923895
+  },
+  {
+    "postcode":2166,
+    "suburb":"CANLEY VALE",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.887291,
+    "lon":150.943275
+  },
+  {
+    "postcode":2166,
+    "suburb":"LANSVALE",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.89733,
+    "lon":150.952786
+  },
+  {
+    "postcode":2167,
+    "suburb":"GLENFIELD",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.971305,
+    "lon":150.894517
+  },
+  {
+    "postcode":2168,
+    "suburb":"ASHCROFT",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.917587,
+    "lon":150.899095
+  },
+  {
+    "postcode":2168,
+    "suburb":"BUSBY",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.910896,
+    "lon":150.875155
+  },
+  {
+    "postcode":2168,
+    "suburb":"CARTWRIGHT",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.926577,
+    "lon":150.890356
+  },
+  {
+    "postcode":2168,
+    "suburb":"GREEN VALLEY",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.903526,
+    "lon":150.86636
+  },
+  {
+    "postcode":2168,
+    "suburb":"HECKENBERG",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.911083,
+    "lon":150.889921
+  },
+  {
+    "postcode":2168,
+    "suburb":"HINCHINBROOK",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.916611,
+    "lon":150.863863
+  },
+  {
+    "postcode":2168,
+    "suburb":"SADLEIR",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.920629,
+    "lon":150.890212
+  },
+  {
+    "postcode":2170,
+    "suburb":"CASULA",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.94735,
+    "lon":150.907753
+  },
+  {
+    "postcode":2170,
+    "suburb":"CASULA MALL",
+    "state":"NSW",
+    "dc":"CASULA MALL LPO",
+    "lat":-33.950422,
+    "lon":150.909367
+  },
+  {
+    "postcode":2170,
+    "suburb":"CHIPPING NORTON",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.916829,
+    "lon":150.961662
+  },
+  {
+    "postcode":2170,
+    "suburb":"HAMMONDVILLE",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.948113,
+    "lon":150.953727
+  },
+  {
+    "postcode":2170,
+    "suburb":"LIVERPOOL",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.92505,
+    "lon":150.924429
+  },
+  {
+    "postcode":2170,
+    "suburb":"LIVERPOOL SOUTH",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.933376,
+    "lon":150.906608
+  },
+  {
+    "postcode":2170,
+    "suburb":"LIVERPOOL WESTFIELD",
+    "state":"NSW",
+    "dc":"LIVERPOOL WESTFIELD POST SHOP",
+    "lat":-33.918951,
+    "lon":150.923868
+  },
+  {
+    "postcode":2170,
+    "suburb":"LURNEA",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.931947,
+    "lon":150.896105
+  },
+  {
+    "postcode":2170,
+    "suburb":"MOOREBANK",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.933805,
+    "lon":150.953602
+  },
+  {
+    "postcode":2170,
+    "suburb":"MOUNT PRITCHARD",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.894817,
+    "lon":150.90304
+  },
+  {
+    "postcode":2170,
+    "suburb":"PRESTONS",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.942903,
+    "lon":150.872145
+  },
+  {
+    "postcode":2170,
+    "suburb":"WARWICK FARM",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.913423,
+    "lon":150.932752
+  },
+  {
+    "postcode":2171,
+    "suburb":"CECIL HILLS",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.883696,
+    "lon":150.853171
+  },
+  {
+    "postcode":2171,
+    "suburb":"HORNINGSEA PARK",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.945088,
+    "lon":150.842975
+  },
+  {
+    "postcode":2171,
+    "suburb":"HOXTON PARK",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.92678,
+    "lon":150.857888
+  },
+  {
+    "postcode":2171,
+    "suburb":"MIDDLETON GRANGE",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.914093,
+    "lon":150.843547
+  },
+  {
+    "postcode":2171,
+    "suburb":"WEST HOXTON",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.922272,
+    "lon":150.839967
+  },
+  {
+    "postcode":2172,
+    "suburb":"PLEASURE POINT",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.966909,
+    "lon":150.98764
+  },
+  {
+    "postcode":2172,
+    "suburb":"SANDY POINT",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.975419,
+    "lon":150.993967
+  },
+  {
+    "postcode":2172,
+    "suburb":"VOYAGER POINT",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.964547,
+    "lon":150.97238
+  },
+  {
+    "postcode":2173,
+    "suburb":"HOLSWORTHY",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.950403,
+    "lon":150.949972
+  },
+  {
+    "postcode":2173,
+    "suburb":"WATTLE GROVE",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.963316,
+    "lon":150.936403
+  },
+  {
+    "postcode":2175,
+    "suburb":"HORSLEY PARK",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.845034,
+    "lon":150.848192
+  },
+  {
+    "postcode":2176,
+    "suburb":"ABBOTSBURY",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.877538,
+    "lon":150.867768
+  },
+  {
+    "postcode":2176,
+    "suburb":"BOSSLEY PARK",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.86626,
+    "lon":150.88415
+  },
+  {
+    "postcode":2176,
+    "suburb":"EDENSOR PARK",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.877057,
+    "lon":150.875292
+  },
+  {
+    "postcode":2176,
+    "suburb":"GREENFIELD PARK",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.872187,
+    "lon":150.889408
+  },
+  {
+    "postcode":2176,
+    "suburb":"PRAIRIEWOOD",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.867342,
+    "lon":150.90213
+  },
+  {
+    "postcode":2176,
+    "suburb":"ST JOHNS PARK",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.885824,
+    "lon":150.905403
+  },
+  {
+    "postcode":2176,
+    "suburb":"WAKELEY",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.873966,
+    "lon":150.90888
+  },
+  {
+    "postcode":2177,
+    "suburb":"BONNYRIGG",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.888801,
+    "lon":150.886505
+  },
+  {
+    "postcode":2177,
+    "suburb":"BONNYRIGG HEIGHTS",
+    "state":"NSW",
+    "dc":"PRESTONS DC",
+    "lat":-33.892667,
+    "lon":150.868448
+  },
+  {
+    "postcode":2178,
+    "suburb":"CECIL PARK",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.87478,
+    "lon":150.838225
+  },
+  {
+    "postcode":2178,
+    "suburb":"KEMPS CREEK",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.88013,
+    "lon":150.790485
+  },
+  {
+    "postcode":2178,
+    "suburb":"MOUNT VERNON",
+    "state":"NSW",
+    "dc":"ST MARYS",
+    "lat":-33.862377,
+    "lon":150.807887
+  },
+  {
+    "postcode":2179,
+    "suburb":"AUSTRAL",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.933109,
+    "lon":150.812031
+  },
+  {
+    "postcode":2179,
+    "suburb":"LEPPINGTON",
+    "state":"NSW",
+    "dc":"NARELLAN DC",
+    "lat":-33.964333,
+    "lon":150.81727
+  },
+  {
+    "postcode":2190,
+    "suburb":"CHULLORA",
+    "state":"NSW",
+    "dc":"LAKEMBA DC",
+    "lat":-33.892441,
+    "lon":151.055898
+  },
+  {
+    "postcode":2190,
+    "suburb":"GREENACRE",
+    "state":"NSW",
+    "dc":"LAKEMBA DC",
+    "lat":-33.906744,
+    "lon":151.057271
+  },
+  {
+    "postcode":2190,
+    "suburb":"MOUNT LEWIS",
+    "state":"NSW",
+    "dc":"LAKEMBA DC",
+    "lat":-33.917157,
+    "lon":151.047838
+  },
+  {
+    "postcode":2191,
+    "suburb":"BELFIELD",
+    "state":"NSW",
+    "dc":"LAKEMBA DC",
+    "lat":-33.902107,
+    "lon":151.083553
+  },
+  {
+    "postcode":2192,
+    "suburb":"BELMORE",
+    "state":"NSW",
+    "dc":"LAKEMBA DC",
+    "lat":-33.916035,
+    "lon":151.0875
+  },
+  {
+    "postcode":2193,
+    "suburb":"ASHBURY",
+    "state":"NSW",
+    "dc":"CROYDON PARK DC",
+    "lat":-33.901897,
+    "lon":151.11932
+  },
+  {
+    "postcode":2193,
+    "suburb":"CANTERBURY",
+    "state":"NSW",
+    "dc":"CROYDON PARK DC",
+    "lat":-33.910848,
+    "lon":151.121145
+  },
+  {
+    "postcode":2193,
+    "suburb":"HURLSTONE PARK",
+    "state":"NSW",
+    "dc":"CROYDON PARK DC",
+    "lat":-33.909964,
+    "lon":151.13224
+  },
+  {
+    "postcode":2194,
+    "suburb":"CAMPSIE",
+    "state":"NSW",
+    "dc":"CROYDON PARK DC",
+    "lat":-33.914373,
+    "lon":151.103465
+  },
+  {
+    "postcode":2195,
+    "suburb":"LAKEMBA",
+    "state":"NSW",
+    "dc":"LAKEMBA DC",
+    "lat":-33.920457,
+    "lon":151.075921
+  },
+  {
+    "postcode":2195,
+    "suburb":"WILEY PARK",
+    "state":"NSW",
+    "dc":"LAKEMBA DC",
+    "lat":-33.922464,
+    "lon":151.068194
+  },
+  {
+    "postcode":2196,
+    "suburb":"PUNCHBOWL",
+    "state":"NSW",
+    "dc":"LAKEMBA DC",
+    "lat":-33.925686,
+    "lon":151.054635
+  },
+  {
+    "postcode":2196,
+    "suburb":"ROSELANDS",
+    "state":"NSW",
+    "dc":"LAKEMBA DC",
+    "lat":-33.933167,
+    "lon":151.073197
+  },
+  {
+    "postcode":2197,
+    "suburb":"BASS HILL",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.900608,
+    "lon":150.992888
+  },
+  {
+    "postcode":2198,
+    "suburb":"GEORGES HALL",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.912851,
+    "lon":150.982469
+  },
+  {
+    "postcode":2199,
+    "suburb":"YAGOONA",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.907725,
+    "lon":151.026108
+  },
+  {
+    "postcode":2199,
+    "suburb":"YAGOONA WEST",
+    "state":"NSW",
+    "dc":"YAGOONA WEST LPO",
+    "lat":-33.918726,
+    "lon":151.037007
+  },
+  {
+    "postcode":2200,
+    "suburb":"BANKSTOWN",
+    "state":"NSW",
+    "dc":"LEIGHTONFIELD DF",
+    "lat":-33.919539,
+    "lon":151.034909
+  }
+]

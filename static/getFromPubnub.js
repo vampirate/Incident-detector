@@ -21,6 +21,9 @@ var pubnub = new PubNub({
     ssl: true
 });
 
+var suburbs = require('./NSWLATLON.json')
+suburb = suburbs[Math.floor(Math.random() * suburbs.length)]
+
 pubnub.subscribe({
     channels: ["iot"],
 });
@@ -87,3 +90,4 @@ pubnub.addListener({
        
     }
 })
+

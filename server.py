@@ -49,7 +49,8 @@ def deleteData():
 
 @app.route("/openSimulator", methods=["GET"])
 def openSimulator():
-    return render_template("dashboard.html")
+    print("SIMULATOR OPEN!")
+    return render_template("simulator.html")
 
 @app.after_request
 def add_header(response):

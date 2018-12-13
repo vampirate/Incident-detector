@@ -1,0 +1,102 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Incident Report Client</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="shortcut icon" href="">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6C7cZM_BmEySiVB5l_-4ahYp1VtQ5ciE"></script>
+        <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.5.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="{{ url_for('static', filename = "getWeather.js") }}"></script>
+        <script src="{{ url_for('static', filename = "sendToPubnub.js") }}"></script>
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <hr>
+            <h1>Incident Simulator</h1>
+            <form>
+                <div class="form-group">
+                    <label>Suburb</label>
+                    <input type="text" class="form-control" id="suburb" onkeyup="formChanged()" onchange="formChanged()">
+                    <label>Postcode</label>
+                    <input type="text" class="form-control" id="postcode" onkeyup="formChanged()" onchange="formChanged()">
+                    <label>State</label>
+                    <input type="text" class="form-control" id="state" onkeyup="formChanged()" onchange="formChanged()">
+                    <label>Latitude</label>
+                    <input type="text" class="form-control" id="lat" onchange="formChanged()">
+                    <label>Longitude</label>
+                    <input type="text" class="form-control" id="lon" onchange="formChanged()">
+                    <label>Temperature (Celcius)</label>
+                    <input type="text" class="form-control" id="temp" onkeyup="formChanged()" onchange="formChanged()">
+                </div>
+
+            </form>
+            <button class="btn btn-success" onclick="send()">Send</button>
+            <button class="btn btn-success" onclick="getLocation()">Get current location</button>
+        </div>
+
+        <script>
+            function formChanged() {
+                suburb = document.getElementById("suburb").value;
+                postcode = document.getElementById("postcode").value;
+                state = document.getElementById("state").value;
+                latitude = document.getElementById("lat").value;
+                longitude = document.getElementById("lon").value;
+                temp = document.getElementById("temp").value;
+                getWeather()
+                getSuburb()
+                document.getElementById("temp").value = temp
+                setTimeout(function () {}, 1000);
+            }
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    console.log("Geolocation is not supported by this browser.")
+                }
+            }
+
+            function showPosition(position) {
+                console.log("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude)
+                document.getElementById("lat").value = position.coords.latitude
+                document.getElementById("lon").value = position.coords.longitude
+latitude = document.getElementById("lat").value;
+                longitude = document.getElementById("lon").value;
+                getWeather()
+                getSuburb()
+                document.getElementById("temp").value = temp
+            }
+
+            function getSuburb() {
+latitude = document.getElementById("lat").value;
+                longitude = document.getElementById("lon").value;
+                var geocoder = new google.maps.Geocoder;
+                var latlng = {
+lat: parseFloat(latitude),
+                    lng: parseFloat(longitude)
+                };
+                geocoder.geocode({
+                    'location': latlng
+                }, function (results, status) {
+                    if (status === 'OK') {
+                        var count = results[0].address_components.length;
+                        suburb = results[0].address_components[count - 5].long_name
+                        postcode = results[0].address_components[count - 1].long_name
+                        state = results[0].address_components[count - 3].short_name
+                        document.getElementById("postcode").value = postcode
+                        document.getElementById("suburb").value = suburb
+                        document.getElementById("state").value = state
+                    }
+                });
+            }
+        </script>
+    </body>
+
+</html>
