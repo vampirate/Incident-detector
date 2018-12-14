@@ -30,7 +30,6 @@ if (navigator.userAgent.includes("Mac")) {
     device = "Windows"
 }
 
-var device = navigator.userAgent
 console.log("device is " + device)
 
 function send() {
