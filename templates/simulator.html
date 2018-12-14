@@ -39,6 +39,7 @@
             </form>
             <button class="btn btn-success" onclick="send()">Send</button>
             <button class="btn btn-success" onclick="getLocation()">Get current location</button>
+            <button class="btn btn-success" onclick="getNewIncident()">Create another incident</button>
         </div>
 
         <script>
@@ -67,7 +68,7 @@
                 console.log("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude)
                 document.getElementById("lat").value = position.coords.latitude
                 document.getElementById("lon").value = position.coords.longitude
-latitude = document.getElementById("lat").value;
+                latitude = document.getElementById("lat").value;
                 longitude = document.getElementById("lon").value;
                 getWeather()
                 getSuburb()
@@ -75,11 +76,11 @@ latitude = document.getElementById("lat").value;
             }
 
             function getSuburb() {
-latitude = document.getElementById("lat").value;
+                latitude = document.getElementById("lat").value;
                 longitude = document.getElementById("lon").value;
                 var geocoder = new google.maps.Geocoder;
                 var latlng = {
-lat: parseFloat(latitude),
+                    lat: parseFloat(latitude),
                     lng: parseFloat(longitude)
                 };
                 geocoder.geocode({

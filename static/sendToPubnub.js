@@ -6,6 +6,7 @@ var pubnub = new PubNub({
 
 var postcode
 var suburb
+var suburbData
 var state
 var latitude
 var longitude
@@ -20,18 +21,6 @@ var photo = 0
 var names = "compooter"
 var colour = "Green"
 var device = "Windows"
-
-getSuburb()
-
-getWeather();
-document.getElementById("postcode").value = postcode
-document.getElementById("suburb").value = suburb
-document.getElementById("state").value = state
-document.getElementById("lat").value = latitude
-document.getElementById("lon").value = longitude
-document.getElementById("temp").value = temp
-
-
 
 function send() {
     temp = temp * 100
@@ -63,29 +52,39 @@ function send() {
                 // handle error
                 console.log(status)
             } else {
-
+                console.log("sent to pubnub")
             }
         }
     )
-    getSuburb()
 
-    getWeather();
+}
+
+var getSuburbFromJson = function () {
+    $.ajaxSetup({
+        async: false
+    });
+
+    $.getJSON("./static/NSWLATLON.json", function (data) {
+        var count = Math.floor(Math.random() * data.length)
+        postcode = data[count].postcode;
+        suburb = data[count].suburb;
+        state = data[count].state;
+        latitude = data[count].lat;
+        longitude = data[count].lon;
+    });
+}
+
+var showIncident = function (getSuburbFromJson) {
     document.getElementById("postcode").value = postcode
     document.getElementById("suburb").value = suburb
     document.getElementById("state").value = state
     document.getElementById("lat").value = latitude
     document.getElementById("lon").value = longitude
     document.getElementById("temp").value = temp
-
-
 }
 
-function getSuburb() {
-    suburbs = require("./NSWLATLON.json")
-    suburbData = suburbs[Math.floor(Math.random() * suburbs.length)];
-    postcode = suburbData.postcode
-    suburb = suburbData.suburb
-    state = suburbData.state
-    latitude = suburbData.lat
-    longitude = suburbData.lon
+function getNewIncident() {
+    getSuburbFromJson()
+    getWeather()
+    showIncident()
 }
