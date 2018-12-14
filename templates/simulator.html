@@ -88,7 +88,7 @@
                 }, function (results, status) {
                     if (status === 'OK') {
                         var count = results[0].address_components.length;
-                        suburb = results[0].address_components[count - 4].long_name
+                        suburb = results[0].address_components[0].long_name
                         postcode = results[0].address_components[count - 1].long_name
                         state = results[0].address_components[count - 3].short_name
                         document.getElementById("postcode").value = postcode
