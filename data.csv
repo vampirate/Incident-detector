@@ -1,1 +1,10 @@
 Suburb,Postcode,Latitude,Longitude,Temperature (C),Pressure (Pa),Photoelectric (mV),time,device
+HOMEBUSH,2140,-34.0,151.0,23.5,100182,1103,1544755070,iot
+HOMEBUSH,2140,-34.0,151.0,23.9,100170,947,1544756871,iot
+HOMEBUSH,2140,-34.0,151.0,23.9,100170,947,1544756871,iot
+GEORGES HALL,2198,-33.912851,150.982469,24.0,0,0,1413,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0
+GEORGES HALL,2198,-33.912851,150.982469,24.0,0,0,1413,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0
+GEORGES HALL,2198,-33.912851,150.982469,24.0,0,0,1413,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0
+GEORGES HALL,2198,-33.912851,150.982469,24.0,0,0,1413,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0
+Sydney,2000,-33.8722807,151.203203,23.9,0,0,1413,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0
+Sydney,2000,-33.8722807,151.203203,23.9,0,0,1413,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0

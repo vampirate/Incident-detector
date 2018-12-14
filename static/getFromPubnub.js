@@ -55,7 +55,7 @@ pubnub.addListener({
 
         //now increment device counts
 
-        if (device == 'MacIntel') {
+        if (device.includes("Mac")) {
             appleCounter++;
         } else if (device == 'iPhone') {
             androidCounter++;

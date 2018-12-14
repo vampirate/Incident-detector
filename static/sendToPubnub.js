@@ -10,9 +10,9 @@ var suburbData
 var state
 var latitude
 var longitude
-var hour = (new Date()).getHours()
-var min = +(new Date()).getMinutes()
-var time = `${hour}${min}`
+var hour 
+var min
+var time
 
 var temp
 
@@ -20,9 +20,13 @@ var pressure = 0
 var photo = 0
 var names = "compooter"
 var colour = "Green"
-var device = "Windows"
+var device = navigator.userAgent
+console.log("device is " + device)
 
 function send() {
+    hour = (new Date()).getHours()
+    min = +(new Date()).getMinutes()
+    time = `${hour}${min}`
     temp = temp * 100
     pubnub.publish({
             message: {
