@@ -20,6 +20,16 @@ var pressure = 0
 var photo = 0
 var names = "compooter"
 var colour = "Green"
+var device 
+
+if (navigator.userAgent.includes("Mac")) {
+    device = "Mac"
+} else if (navigator.userAgent.includes("Iphone")) {
+    device = "iPhone"
+} else {
+    device = "Windows"
+}
+
 var device = navigator.userAgent
 console.log("device is " + device)
 
