@@ -12,9 +12,9 @@ var postcode,
     state,
     latitude,
     longitude,
+    time,
     hour,
-    min,
-    time;
+    min;
 
 var temp;
 
