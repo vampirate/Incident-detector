@@ -8,7 +8,6 @@ var navigator;
 
 var postcode,
     suburb,
-    suburbData,
     state,
     latitude,
     longitude,
