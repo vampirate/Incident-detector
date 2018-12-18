@@ -5,17 +5,14 @@
         <title>Incident Report Server</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
             integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ url_for('static', filename = "serverCSS.css") }}">
         <link rel="shortcut icon" href="">
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6C7cZM_BmEySiVB5l_-4ahYp1VtQ5ciE"></script>
-        <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.5.min.js"></script>
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="{{ url_for('static', filename = "getFromPubnub.js") }}"></script>
         <script src="{{ url_for('static', filename = "map.js") }}"></script>
-        <script src="{{ url_for('static', filename = "getWeather.js") }}"></script>
     </head>
 
     <body>
@@ -63,8 +60,8 @@
                             the data</button>
                     </div>
                     <div style="margin: 0.5%;">
-<button id="open-simulator" class="btn btn-info" onclick="window.open('/openSimulator', '_blank')">Open
-    the
+                        <button id="open-simulator" class="btn btn-info" onclick="window.open('/openSimulator', '_blank')">Open
+                            the
                             simulator</button>
                     </div>
 
@@ -78,123 +75,128 @@
         <div class="footer">
             <p>Powered by Pubnub and Google Map API</p>
         </div>
+
+        <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.5.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="{{ url_for('static', filename = "getFromPubnub.js") }}"></script>
+        <script src="{{ url_for('static', filename = "getWeather.js") }}"></script>
+
+        <script>
+            var deviceDataFlag = false;
+
+            function toggleDeviceData() {
+                console.log("Toggling Device Data")
+                var deviceDataText = document.getElementById("device-data");
+                var deviceDataButton = document.getElementById("check-device-data");
+
+                if (deviceDataFlag == true) {
+                    deviceDataText.style.display = "block";
+                    deviceDataButton.innerHTML = "Hide device info"
+                    deviceDataFlag = false;
+                } else {
+                    deviceDataText.style.display = "none";
+                    deviceDataButton.innerHTML = "Display device info"
+                    deviceDataFlag = true;
+                }
+
+            }
+        </script>
+
+        <script>
+            var myList;
+
+            function pushData() {
+                console.log("Pushing data to CSV")
+
+                var pushDataRequest = new XMLHttpRequest();
+                pushDataRequest.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        getData();
+                    }
+                }
+                pushDataRequest.open("POST", "{{ url_for('pushData') }}", false);
+                pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&lat=" + latitude + "&lon=" +
+                    longitude +
+                    "&temp=" + temp + "&pressure=" + pressure + "&photo=" + photo + "&time=" + time + "&device=" +
+                    device);
+                //console.log("Pushed data to CSV")
+            }
+
+            var getData = function (pushData) {
+                //console.log("Getting data from CSV")
+                var getDataRequest = new XMLHttpRequest();
+                getDataRequest.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("table").innerHTML = "";
+                        myList = JSON.parse(this.responseText);
+                        showData();
+                    }
+                };
+                getDataRequest.open("GET", "{{ url_for('getData') }}", false);
+                getDataRequest.send();
+            }
+            getData();
+
+            function showData() {
+                //console.log("Showing data")
+                var columns = addAllColumnHeaders(myList);
+                for (var i = 0; i < myList.length; i++) {
+                    var row$ = $('<tr/>');
+                    for (var colIndex = 0; colIndex < columns.length; colIndex++) {
+                        var cellValue = myList[i][columns[colIndex]];
+                        if (cellValue == null) {
+                            cellValue = "";
+                        }
+                        row$.append($('<td/>').html(cellValue));
+                    }
+                    $("#table").append(row$);
+                }
+            }
+
+            function addAllColumnHeaders(myList) {
+                var columnSet = [];
+                var headerTr$ = $('<tr/>');
+                for (var i = 0; i < myList.length; i++) {
+                    var rowHash = myList[i];
+                    for (var key in rowHash) {
+                        if ($.inArray(key, columnSet) == -1) {
+                            columnSet.push(key);
+                            headerTr$.append($('<th/>').html(key));
+                        }
+                    }
+                }
+                $("#table").append(headerTr$);
+                return columnSet;
+            }
+
+            function deleteData() {
+                //console.log("Deleting data")
+                var deleteDataRequest = new XMLHttpRequest();
+                deleteDataRequest.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("table").innerHTML = "";
+                        myList = JSON.parse(this.responseText);
+                        showData();
+                    }
+                }
+                deleteDataRequest.open("GET", "{{ url_for('deleteData') }}", false);
+                deleteDataRequest.send();
+            }
+
+            function openSimulator() {
+                var openSimulator = new XMLHttpRequest();
+                openSimulator.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {}
+                }
+                openSimulator.open("GET", "{{ url_for('openSimulator') }}", false);
+                openSimulator.send();
+            }
+
+            $("body").on('DOMSubtreeModified', "#device-data", function () {
+                document.getElementById("push-data").disabled = false;
+            });
+        </script>
     </body>
-
-    <script>
-        var deviceDataFlag = false;
-
-        function toggleDeviceData() {
-            console.log("Toggling Device Data")
-            var deviceDataText = document.getElementById("device-data");
-            var deviceDataButton = document.getElementById("check-device-data");
-
-            if (deviceDataFlag == true) {
-                deviceDataText.style.display = "block";
-                deviceDataButton.innerHTML = "Hide device info"
-                deviceDataFlag = false;
-            } else {
-                deviceDataText.style.display = "none";
-                deviceDataButton.innerHTML = "Display device info"
-                deviceDataFlag = true;
-            }
-
-        }
-    </script>
-
-    <script>
-        var myList;
-
-        function pushData() {
-            console.log("Pushing data to CSV")
-
-            var pushDataRequest = new XMLHttpRequest();
-            pushDataRequest.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    getData();
-                }
-            }
-            pushDataRequest.open("POST", "{{ url_for('pushData') }}", false);
-            pushDataRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            pushDataRequest.send("suburb=" + suburb + "&postcode=" + postcode + "&lat=" + latitude + "&lon=" +
-                longitude +
-                "&temp=" + temp + "&pressure=" + pressure + "&photo=" + photo + "&time=" + time + "&device=" +
-                device);
-            //console.log("Pushed data to CSV")
-        }
-
-        var getData = function (pushData) {
-            //console.log("Getting data from CSV")
-            var getDataRequest = new XMLHttpRequest();
-            getDataRequest.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("table").innerHTML = "";
-                    myList = JSON.parse(this.responseText);
-                    showData();
-                }
-            };
-            getDataRequest.open("GET", "{{ url_for('getData') }}", false);
-            getDataRequest.send();
-        }
-        getData();
-
-        function showData() {
-            //console.log("Showing data")
-            var columns = addAllColumnHeaders(myList);
-            for (var i = 0; i < myList.length; i++) {
-                var row$ = $('<tr/>');
-                for (var colIndex = 0; colIndex < columns.length; colIndex++) {
-                    var cellValue = myList[i][columns[colIndex]];
-                    if (cellValue == null) {
-                        cellValue = "";
-                    }
-                    row$.append($('<td/>').html(cellValue));
-                }
-                $("#table").append(row$);
-            }
-        }
-
-        function addAllColumnHeaders(myList) {
-            var columnSet = [];
-            var headerTr$ = $('<tr/>');
-            for (var i = 0; i < myList.length; i++) {
-                var rowHash = myList[i];
-                for (var key in rowHash) {
-                    if ($.inArray(key, columnSet) == -1) {
-                        columnSet.push(key);
-                        headerTr$.append($('<th/>').html(key));
-                    }
-                }
-            }
-            $("#table").append(headerTr$);
-            return columnSet;
-        }
-
-        function deleteData() {
-            //console.log("Deleting data")
-            var deleteDataRequest = new XMLHttpRequest();
-            deleteDataRequest.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("table").innerHTML = "";
-                    myList = JSON.parse(this.responseText);
-                    showData();
-                }
-            }
-            deleteDataRequest.open("GET", "{{ url_for('deleteData') }}", false);
-            deleteDataRequest.send();
-        }
-
-        function openSimulator() {
-            var openSimulator = new XMLHttpRequest();
-            openSimulator.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {}
-            }
-            openSimulator.open("GET", "{{ url_for('openSimulator') }}", false);
-            openSimulator.send();
-        }
-
-        $("body").on('DOMSubtreeModified', "#device-data", function () {
-            document.getElementById("push-data").disabled = false;
-        });
-    </script>
 
 </html>

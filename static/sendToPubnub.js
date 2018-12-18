@@ -4,39 +4,41 @@ var pubnub = new PubNub({
     ssl: true
 })
 
-var postcode
-var suburb
-var suburbData
-var state
-var latitude
-var longitude
-var hour 
-var min
-var time
+var navigator;
 
-var temp
+var postcode,
+    suburb,
+    suburbData,
+    state,
+    latitude,
+    longitude,
+    hour,
+    min,
+    time;
 
-var pressure = 0
-var photo = 0
-var names = "compooter"
-var colour = "Green"
-var device 
+var temp;
+
+var pressure = 0,
+    photo = 0,
+    names = "compooter",
+    colour = "Green",
+    device;
 
 if (navigator.userAgent.includes("Mac")) {
-    device = "Mac"
+    device = "Mac";
 } else if (navigator.userAgent.includes("Iphone")) {
-    device = "iPhone"
+    device = "iPhone";
 } else {
-    device = "Windows"
+    device = "Windows";
 }
 
-console.log("device is " + device)
+console.log("device is " + device);
 
 function send() {
-    hour = (new Date()).getHours()
-    min = +(new Date()).getMinutes()
-    time = `${hour}${min}`
-    temp = temp * 100
+    hour = (new Date()).getHours();
+    min = (new Date()).getMinutes();
+    time = `${hour}${min}`;
+    temp = temp * 100;
     pubnub.publish({
             message: {
                 "postcode": `${postcode}`,
@@ -52,7 +54,7 @@ function send() {
                 "colour": `${colour}`,
                 "device": `${device}`
             },
-            channel: 'iot',
+            channel: "iot",
             sendByPost: false, // true to send via post
             storeInHistory: false, //override default storage options
             meta: {
@@ -63,9 +65,9 @@ function send() {
         function (status, response) {
             if (status.error) {
                 // handle error
-                console.log(status)
+                console.log(status);
             } else {
-                console.log("sent to pubnub")
+                console.log("sent to pubnub");
             }
         }
     )
@@ -78,7 +80,7 @@ var getSuburbFromJson = function () {
     });
 
     $.getJSON("./static/NSWLATLON.json", function (data) {
-        var count = Math.floor(Math.random() * data.length)
+        var count = Math.floor(Math.random() * data.length);
         postcode = data[count].postcode;
         suburb = data[count].suburb;
         state = data[count].state;
@@ -88,12 +90,12 @@ var getSuburbFromJson = function () {
 }
 
 var showIncident = function (getSuburbFromJson) {
-    document.getElementById("postcode").value = postcode
-    document.getElementById("suburb").value = suburb
-    document.getElementById("state").value = state
-    document.getElementById("lat").value = latitude
-    document.getElementById("lon").value = longitude
-    document.getElementById("temp").value = temp
+    document.getElementById("postcode").value = postcode;
+    document.getElementById("suburb").value = suburb;
+    document.getElementById("state").value = state;
+    document.getElementById("lat").value = latitude;
+    document.getElementById("lon").value = longitude;
+    document.getElementById("temp").value = temp;
 }
 
 function getNewIncident() {
