@@ -11,8 +11,6 @@
         <link rel="stylesheet" href="{{ url_for('static', filename = "serverCSS.css") }}">
         <link rel="shortcut icon" href="">
 
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6C7cZM_BmEySiVB5l_-4ahYp1VtQ5ciE"></script>
-        <script src="{{ url_for('static', filename = "map.js") }}"></script>
     </head>
 
     <body>
@@ -80,6 +78,8 @@
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="{{ url_for('static', filename = "getFromPubnub.js") }}"></script>
         <script src="{{ url_for('static', filename = "getWeather.js") }}"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6C7cZM_BmEySiVB5l_-4ahYp1VtQ5ciE"></script>
+        <script src="{{ url_for('static', filename = "map.js") }}"></script>
 
         <script>
             var deviceDataFlag = false;

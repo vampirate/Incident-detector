@@ -17,22 +17,22 @@
             <form>
                 <div class="form-group">
                     <label>Suburb</label>
-                    <input type="text" class="form-control" id="suburb" onkeyup="formChanged()" onchange="formChanged()">
+                    <input type="text" class="form-control" id="suburb" onchange="formChanged()">
                     <label>Postcode</label>
-                    <input type="text" class="form-control" id="postcode" onkeyup="formChanged()" onchange="formChanged()">
+                    <input type="text" class="form-control" id="postcode" onchange="formChanged()">
                     <label>State</label>
-                    <input type="text" class="form-control" id="state" onkeyup="formChanged()" onchange="formChanged()">
+                    <input type="text" class="form-control" id="state" onchange="formChanged()">
                     <label>Latitude</label>
                     <input type="text" class="form-control" id="lat" onchange="formChanged()">
                     <label>Longitude</label>
                     <input type="text" class="form-control" id="lon" onchange="formChanged()">
                     <label>Temperature (Celcius)</label>
-                    <input type="text" class="form-control" id="temp" onkeyup="formChanged()" onchange="formChanged()">
+                    <input type="text" class="form-control" id="temp" onchange="formChanged()">
                 </div>
 
             </form>
             <button class="btn btn-success" onclick="send()">Send</button>
-            <button class="btn btn-success" onclick="getLocation()">Get current location</button>
+            <button class="btn btn-success" onclick="getLocation()" disabled>Get current location</button>
             <button class="btn btn-success" onclick="getNewIncident()">Create another incident</button>
         </div>
 
@@ -44,10 +44,9 @@
                 latitude = document.getElementById("lat").value;
                 longitude = document.getElementById("lon").value;
                 temp = document.getElementById("temp").value;
-                getWeather()
-                getSuburb()
-                document.getElementById("temp").value = temp
-                setTimeout(function () {}, 1000);
+                getWeather(temp);
+                getSuburb();
+                document.getElementById("temp").value = temp;
             }
 
             function getLocation() {
@@ -64,7 +63,7 @@
                 document.getElementById("lon").value = position.coords.longitude
                 latitude = document.getElementById("lat").value;
                 longitude = document.getElementById("lon").value;
-                getWeather()
+                getWeather(temp)
                 getSuburb()
                 document.getElementById("temp").value = temp
             }
